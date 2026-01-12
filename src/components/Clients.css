@@ -1,0 +1,51 @@
+.clients-section {
+  background-color: white;
+  overflow: hidden;
+  padding-bottom: 4rem; /* Add some padding at bottom */
+}
+
+.clients-marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Add fade effect on edges */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.clients-track {
+  display: flex;
+  gap: 6rem; /* Gap between logos */
+  width: max-content; /* Ensure width fits content */
+  padding: 2rem 0; /* Add padding for hover effects */
+}
+
+.client-logo-wrapper {
+  flex: 0 0 auto;
+  width: 220px; /* Same large size as requested */
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(0%);
+  opacity: 0.9;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.client-logo-wrapper:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+  z-index: 10; /* Bring to front on hover */
+}
+
+.client-logo-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Remove old grid styles that might conflict */
+.clients-grid {
+  display: none;
+}

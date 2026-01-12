@@ -1,0 +1,137 @@
+.contact-cta-section {
+  padding: 4rem 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+.contact-cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(100deg, #d881a8 0%, #8da8d6 50%, #4dbedf 100%);
+  border-radius: 20px;
+  /* Simulating the wavy clipping path roughly based on the image, or just using border-radius for simplicity first */
+  /* For a true wavy top/bottom, clip-path is needed, but border-radius is safer. Let's try a skew or custom shape. */
+  /* Using a simple modern rounded card look with the gradient first, as exact wave match is tricky without SVG */
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.contact-cta-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-cta-text {
+  color: white;
+  max-width: 600px;
+}
+
+.contact-cta-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-cta-text p {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff6b8b;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.cta-button:hover {
+  background-color: #ff4770;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.contact-cta-logo {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-cta-logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+  position: relative;
+  z-index: 2;
+}
+
+.logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Abstract Background Shapes to mimic the "flow" */
+.bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 1;
+}
+
+.shape-1 {
+  top: -50%;
+  left: -20%;
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 107, 139, 0.4);
+}
+
+.shape-2 {
+  bottom: -50%;
+  right: -20%;
+  width: 700px;
+  height: 700px;
+  background: rgba(77, 190, 223, 0.4);
+}
+
+@media (max-width: 900px) {
+  .contact-cta-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+    gap: 3rem;
+  }
+
+  .contact-cta-text h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-cta-text p {
+    font-size: 1.4rem;
+  }
+}
