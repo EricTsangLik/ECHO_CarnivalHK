@@ -3,9 +3,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at center, #ffffff 0%, #fff0f3 50%);
+  position: relative;
+  overflow: hidden;
   text-align: center;
   padding: 100px 20px 60px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background-image: url('/images/hero.JPG');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.85) 0%, rgba(255, 240, 243, 0.85) 50%);
+  z-index: -1;
 }
 
 .hero-content {
@@ -14,6 +40,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 /* Badge */

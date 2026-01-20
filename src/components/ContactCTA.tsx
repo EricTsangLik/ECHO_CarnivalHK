@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaPhone, FaEnvelope, FaInstagram } from 'react-icons/fa';
 import { mainLogo } from '../data/assets';
 import './ContactCTA.css';
 
@@ -15,10 +16,23 @@ const ContactCTA: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2>想舉辦一場閃亮的活動嗎？</h2>
-            <p>聯絡我們了解更多租借方案！</p>
+            <h2>準備好策劃您的完美嘉年華了嗎？</h2>
+            <p>為您創造難忘的體驗，立刻獲取免費報價！</p>
+            
+            <div className="contact-details">
+              <a href="tel:+85293910332" className="contact-item">
+                <FaPhone className="contact-icon" /> +852 9391 0332
+              </a>
+              <a href="mailto:echohkcarnival@gmail.com" className="contact-item">
+                <FaEnvelope className="contact-icon" /> echohkcarnival@gmail.com
+              </a>
+              <a href="https://www.instagram.com/echohk_carnival/" target="_blank" rel="noopener noreferrer" className="contact-item">
+                <FaInstagram className="contact-icon" /> echohk_carnival
+              </a>
+            </div>
+
             <a href="https://wa.me/85293910332?text=I'm%20inquiring%20about%20the%20game%20booth" target="_blank" rel="noopener noreferrer" className="cta-button">
-              聯絡我們 📞
+              👉🏻 獲取免費報價
             </a>
           </motion.div>
           

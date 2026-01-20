@@ -9,7 +9,7 @@ const Clients: React.FC = () => {
 
   return (
     <section id="clients" className="section clients-section">
-      <h2 className="section-title">合作夥伴</h2>
+      <h2 className="section-title">過往合作夥伴</h2>
       
       <div className="clients-marquee-container">
         <motion.div 

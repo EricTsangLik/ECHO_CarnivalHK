@@ -41,13 +41,13 @@ const BoothGallery: React.FC = () => {
               className={`tab-btn ${activeTab === 'indoor' ? 'active' : ''}`}
               onClick={() => setActiveTab('indoor')}
             >
-              🏢 室內攤位
+              室內攤位
             </button>
             <button 
               className={`tab-btn ${activeTab === 'outdoor' ? 'active' : ''}`}
               onClick={() => setActiveTab('outdoor')}
             >
-              🌳 室外攤位
+              室外攤位
             </button>
           </div>
         </div>

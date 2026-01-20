@@ -56,7 +56,7 @@ export const indoorBooths: BoothItem[] = [
   },
   { 
     id: 'in6', 
-    name: '狂擲罐子', 
+    name: '狂掃罐子', 
     category: 'indoor', 
     image: '/images/Booth/室內/罐子.jpg',
     description: '傳統嘉年華遊戲，用豆袋擊倒疊起的罐子。簡單直觀，充滿挑戰性。',
@@ -64,7 +64,7 @@ export const indoorBooths: BoothItem[] = [
   },
   { 
     id: 'in7', 
-    name: '酒樽', 
+    name: '幸運酒樽', 
     category: 'indoor', 
     image: '/images/Booth/室內/酒樽.jpg',
     description: '將膠圈拋出並套中酒樽頸部。需要極高的專注力與技巧，成功感滿分。',
@@ -83,7 +83,7 @@ export const indoorBooths: BoothItem[] = [
 export const outdoorBooths: BoothItem[] = [
   { 
     id: 'out1', 
-    name: '投球入樽', 
+    name: '投球入桶', 
     category: 'outdoor', 
     image: '/images/Booth/室外/入桶.JPG',
     description: '將球投入指定的桶內，看似簡單但極具挑戰性。適合戶外活動，增加互動氣氛。',
@@ -137,6 +137,14 @@ export const outdoorBooths: BoothItem[] = [
     description: '深受小朋友喜愛的釣鴨子遊戲，在流動的水池中釣起鴨子。安全有趣，親子首選。',
     dimensions: '2m (W) x 1m (D) x 0.8m (H)'
   },
+  { 
+    id: 'out8', 
+    name: '籃球狂熱', 
+    category: 'outdoor', 
+    image: '/images/Booth/室內/籃球.jpg',
+    description: '迷你籃球投籃機，在限時內投入越多球分數越高。激發運動細胞，氣氛熱烈。',
+    dimensions: '1.2m (W) x 2.5m (D) x 2.2m (H)'
+  },
 
 ];
 
@@ -146,6 +154,9 @@ export const clientLogos: ClientLogo[] = [
   { id: 'c3', name: 'Choice', image: '/images/client-logo/choice-logo-1-1980x903.png' },
   { id: 'c4', name: 'Images 2', image: '/images/client-logo/images-2.png' },
   { id: 'c5', name: 'V Walk', image: '/images/client-logo/logo-vwalk.svg' },
+  { id: 'c6', name: 'Sunlife', image: '/images/client-logo/logo-sunlife.jpg' },
+  { id: 'c7', name: 'DFS', image: '/images/client-logo/logo-dfs.png' },
+  { id: 'c8', name: 'TKOpopwalk', image: '/images/client-logo/logo-tkopopwalk.png' },
 ];
 
 export const mainLogo = '/images/echo-carnival-logo.png';

@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="hero-badge"
         >
-          <span className="star-icon">✨</span> 自2010年起打造難忘活動
+          <span className="star-icon">✨</span> 自2022年起打造難忘嘉年華
         </motion.div>
         
         <motion.h1
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          為生日派對、企業活動、學校慶典等各類活動提供優質嘉年華遊戲租賃服務。用我們精心策劃的遊戲系列，創造美好回憶。
+          為學校慶典、中華文化日、企業活動、商場活動、屋苑嘉年華、節日派對、生日派對等各類活動提供優質嘉年華遊戲服務。
         </motion.p>
         
         <motion.div
@@ -48,10 +48,10 @@ const Hero: React.FC = () => {
           transition={{ delay: 0.8, duration: 0.5 }}
         >
           <div className="avatars">
-            <div className="avatar" style={{backgroundColor: '#FF6B6B'}}>A</div>
-            <div className="avatar" style={{backgroundColor: '#4ECDC4'}}>B</div>
-            <div className="avatar" style={{backgroundColor: '#45B7D1'}}>C</div>
-            <div className="avatar" style={{backgroundColor: '#FFA07A'}}>D</div>
+            <div className="avatar" style={{backgroundColor: '#FF6B6B'}}>Ada</div>
+            <div className="avatar" style={{backgroundColor: '#4ECDC4'}}>Ben</div>
+            <div className="avatar" style={{backgroundColor: '#45B7D1'}}>Cha</div>
+            <div className="avatar" style={{backgroundColor: '#FFA07A'}}>Dan</div>
           </div>
           <div className="rating">
             <div className="stars">

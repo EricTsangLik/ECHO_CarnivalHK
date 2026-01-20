@@ -11,8 +11,9 @@ const Navbar: React.FC = () => {
         </div>
         <ul className="navbar-menu">
           <li><a href="#home">首頁</a></li>
-          <li><a href="#why-us">為什麼選擇我們</a></li>
+          <li><a href="#why-us">關於我們</a></li>
           <li><a href="#booths">遊戲攤位</a></li>
+          <li><a href="#services">嘉年華服務</a></li>
           <li><a href="#clients">合作夥伴</a></li>
           <li><a href="#contact">聯絡我們</a></li>
         </ul>

@@ -5,23 +5,23 @@ import './WhyUs.css';
 const features = [
   {
     icon: '💰',
-    title: '價格實惠',
-    desc: '比一般市面上的Foam Board攤位更實惠'
+    title: '高性價比',
+    desc: '根據您的預算訂製完美的嘉年華'
   },
   {
     icon: '🎨',
     title: '遊戲種類多',
-    desc: '玩法多變，適合各種場合與年齡層'
+    desc: '比市面上的Foam Board 攤位遊戲更吸引'
   },
   {
     icon: '🌃',
     title: '夜光模式',
-    desc: '獨特夜光設計，白天黑夜都好玩'
+    desc: '自家獨特夜光設計，白天黑夜都好玩'
   },
   {
     icon: '🧰',
     title: '全面支援',
-    desc: '提供送貨、安裝與現場支援服務'
+    desc: '專業團隊協助安裝及操作遊戲及營運'
   }
 ];
 
@@ -30,8 +30,8 @@ const WhyUs: React.FC = () => {
     <section id="why-us" className="section why-us">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">為什麼選擇我們？</h2>
-          <p className="section-subtitle">我們致力於提供最優質的服務，讓您的每一場活動都完美無缺</p>
+          <h2 className="section-title">為什麼選擇ECHO HK Carnival？</h2>
+          <p className="section-subtitle">我們為您提供順利舉辦難忘活動所需的一切</p>
         </div>
         
         <div className="features-grid">

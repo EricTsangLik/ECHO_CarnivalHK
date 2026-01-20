@@ -40,9 +40,37 @@
 
 .contact-cta-text p {
   font-size: 1.8rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   font-weight: 500;
   opacity: 0.95;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgb(251, 203, 177);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.contact-item:hover {
+  opacity: 0.9;
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  font-size: 1.4rem;
 }
 
 .cta-button {
@@ -133,5 +161,9 @@
   
   .contact-cta-text p {
     font-size: 1.4rem;
+  }
+
+  .contact-details {
+    align-items: center;
   }
 }
