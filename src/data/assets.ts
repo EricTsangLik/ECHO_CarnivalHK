@@ -26,7 +26,7 @@ export const indoorBooths: BoothItem[] = [
     id: 'in2', 
     name: '瘋狂射擊', 
     category: 'indoor', 
-    image: '/images/Booth/室內/射擊.jpg',
+    image: '/images/Booth/室內/射擊.png',
     description: '刺激有趣的射擊遊戲，使用安全軟彈槍，擊倒目標即可獲獎。深受小朋友與年輕人喜愛。',
     dimensions: '2m (W) x 2.5m (D) x 2m (H)'
   },
@@ -34,7 +34,7 @@ export const indoorBooths: BoothItem[] = [
     id: 'in3', 
     name: '擊倒牙牙', 
     category: 'indoor', 
-    image: '/images/Booth/室內/牙牙.jpg',
+    image: '/images/Booth/室內/牙牙.png',
     description: '趣味十足的擊倒牙齒遊戲，瞄準目標投擲，將所有牙齒擊倒。考驗準度的同時充滿歡樂。',
     dimensions: '1.5m (W) x 1.5m (D) x 2m (H)'
   },
@@ -42,7 +42,7 @@ export const indoorBooths: BoothItem[] = [
     id: 'in4', 
     name: '沙壺競技', 
     category: 'indoor', 
-    image: '/images/Booth/室內/砂壺.jpg',
+    image: '/images/Booth/室內/沙壺.png',
     description: '類似冰壺的桌上競技遊戲，控制力度將砂壺推入得分區。老少咸宜，適合親子同樂。',
     dimensions: '1.2m (W) x 4m (D) x 1m (H)'
   },
@@ -50,7 +50,7 @@ export const indoorBooths: BoothItem[] = [
     id: 'in5', 
     name: '籃球狂熱', 
     category: 'indoor', 
-    image: '/images/Booth/室內/籃球.jpg',
+    image: '/images/Booth/室內/籃球.png',
     description: '迷你籃球投籃機，在限時內投入越多球分數越高。激發運動細胞，氣氛熱烈。',
     dimensions: '1.2m (W) x 2.5m (D) x 2.2m (H)'
   },
@@ -58,7 +58,7 @@ export const indoorBooths: BoothItem[] = [
     id: 'in6', 
     name: '狂掃罐子', 
     category: 'indoor', 
-    image: '/images/Booth/室內/罐子.jpg',
+    image: '/images/Booth/室內/罐子.png',
     description: '傳統嘉年華遊戲，用豆袋擊倒疊起的罐子。簡單直觀，充滿挑戰性。',
     dimensions: '1.5m (W) x 2m (D) x 2m (H)'
   },
@@ -66,7 +66,7 @@ export const indoorBooths: BoothItem[] = [
     id: 'in7', 
     name: '幸運酒樽', 
     category: 'indoor', 
-    image: '/images/Booth/室內/酒樽.jpg',
+    image: '/images/Booth/室內/酒瓶.png',
     description: '將膠圈拋出並套中酒樽頸部。需要極高的專注力與技巧，成功感滿分。',
     dimensions: '1.5m (W) x 2m (D) x 2m (H)'
   },
@@ -74,7 +74,7 @@ export const indoorBooths: BoothItem[] = [
     id: 'in8', 
     name: '飛鏢高手', 
     category: 'indoor', 
-    image: '/images/Booth/室內/飛鏢.jpg',
+    image: '/images/Booth/室內/飛鏢.png',
     description: '安全磁力或軟頭飛鏢，瞄準靶心投擲。訓練眼手協調，是派對中的經典項目。',
     dimensions: '1.5m (W) x 1m (D) x 2m (H)'
   },
@@ -141,7 +141,7 @@ export const outdoorBooths: BoothItem[] = [
     id: 'out8', 
     name: '籃球狂熱', 
     category: 'outdoor', 
-    image: '/images/Booth/室內/籃球.jpg',
+    image: '/images/Booth/室外/籃球.jpeg',
     description: '迷你籃球投籃機，在限時內投入越多球分數越高。激發運動細胞，氣氛熱烈。',
     dimensions: '1.2m (W) x 2.5m (D) x 2.2m (H)'
   },

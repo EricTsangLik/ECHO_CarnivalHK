@@ -22,6 +22,14 @@ const Hero: React.FC = () => {
         >
           為您的活動 <span className="highlight-text">帶來<span className="swoosh"></span></span> 嘉年華樂趣
         </motion.h1>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
+          攤位遊戲租借｜嘉年華服務
+        </motion.h2>
         
         <motion.p
           initial={{ opacity: 0 }}
@@ -47,20 +55,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.5 }}
         >
-          <div className="avatars">
-            <div className="avatar" style={{backgroundColor: '#FF6B6B'}}>Ada</div>
-            <div className="avatar" style={{backgroundColor: '#4ECDC4'}}>Ben</div>
-            <div className="avatar" style={{backgroundColor: '#45B7D1'}}>Cha</div>
-            <div className="avatar" style={{backgroundColor: '#FFA07A'}}>Dan</div>
-          </div>
-          <div className="rating">
-            <div className="stars">
-              {'★★★★★'.split('').map((_, i) => (
-                <span key={i} className="star">★</span>
-              ))}
-            </div>
-            <span className="rating-text">500+ 場愉快活動</span>
-          </div>
+
         </motion.div>
       </div>
     </section>

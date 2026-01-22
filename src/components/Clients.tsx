@@ -17,7 +17,7 @@ const Clients: React.FC = () => {
           animate={{ x: [0, "-33.33%"] }} // Move by one set of logos (1/3 of total)
           transition={{ 
             repeat: Infinity, 
-            duration: 20, // Adjust speed for smoother flow
+            duration: 60, // Adjust speed for smoother flow
             ease: "linear",
             repeatType: "loop"
           }}

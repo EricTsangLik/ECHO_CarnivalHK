@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h3>關於我們</h3>
-          <p>Echo Carnival 致力於為客戶提供最優質的嘉年華遊戲體驗。無論是公司活動、學校嘉年華還是私人派對，我們都能為您打造難忘的歡樂時光。</p>
+          <p>ECHO HK Carnival 致力於為客戶提供最優質的嘉年華遊戲體驗。無論是公司活動、學校嘉年華還是私人派對，我們都能為您打造難忘的歡樂時光。</p>
         </div>
         
         <div className="footer-section">
