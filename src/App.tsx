@@ -7,12 +7,16 @@ import Clients from './components/Clients';
 import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import SEO from './components/SEO';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
+    <HelmetProvider>
+      <div className="app">
+        <SEO />
+        <Navbar />
       <Hero />
       <WhyUs />
       <BoothGallery />
@@ -21,7 +25,8 @@ function App() {
       <ContactCTA />
       <Footer />
       <FloatingWhatsApp />
-    </div>
+      </div>
+    </HelmetProvider>
   );
 }
 
