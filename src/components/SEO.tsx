@@ -12,7 +12,7 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({
   title = 'Echo Carnival HK - 攤位遊戲租借 | 嘉年華服務',
   description = '專營嘉年華攤位遊戲租借，適合學校慶典、中華文化日、企業活動、商場活動及各類派對。提供室內外遊戲、保齡、射擊等豐富選擇。立即查詢報價！',
-  keywords = '嘉年華, 攤位遊戲, 租借, 香港, Echo Carnival, 活動策劃, 學校活動, 企業活動, 派對遊戲',
+  keywords = '嘉年華, 攤位遊戲租借, 攤位遊戲, 租借, 氣球佈置, 香港, Echo Carnival, 活動策劃, 學校活動, 企業活動, 派對遊戲',
   image = '/images/echo-carnival-logo.png', // Ensure this path is correct
   url = 'https://echocarnival.hk/', // REPLACE with your actual domain
 }) => {
