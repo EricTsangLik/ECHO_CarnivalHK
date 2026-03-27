@@ -149,14 +149,14 @@ export const outdoorBooths: BoothItem[] = [
 ];
 
 export const clientLogos: ClientLogo[] = [
-  { id: 'c1', name: 'Client 1', image: '/images/client-logo/a77d46c2070edb3514dba2035e2167db.png' },
+  { id: 'c1', name: '合作夥伴', image: '/images/client-logo/a77d46c2070edb3514dba2035e2167db.png' },
   { id: 'c2', name: 'CBF', image: '/images/client-logo/CBFlogo.png' },
   { id: 'c3', name: 'Choice', image: '/images/client-logo/choice-logo-1-1980x903.png' },
-  { id: 'c4', name: 'Images 2', image: '/images/client-logo/images-2.png' },
-  { id: 'c5', name: 'V Walk', image: '/images/client-logo/logo-vwalk.svg' },
-  { id: 'c6', name: 'Sunlife', image: '/images/client-logo/logo-sunlife.jpg' },
-  { id: 'c7', name: 'DFS', image: '/images/client-logo/logo-dfs.png' },
-  { id: 'c8', name: 'TKOpopwalk', image: '/images/client-logo/logo-tkopopwalk.png' },
+  { id: 'c4', name: '合作夥伴', image: '/images/client-logo/images-2.png' },
+  { id: 'c5', name: 'V Walk 購物中心', image: '/images/client-logo/logo-vwalk.svg' },
+  { id: 'c6', name: 'Sun Life 永明金融', image: '/images/client-logo/logo-sunlife.jpg' },
+  { id: 'c7', name: 'DFS 環球免稅店', image: '/images/client-logo/logo-dfs.png' },
+  { id: 'c8', name: 'PopWalk 天晉匯', image: '/images/client-logo/logo-tkopopwalk.png' },
 ];
 
 export const mainLogo = '/images/echo-carnival-logo.png';
