@@ -8,14 +8,14 @@ import AboutStats from './_components/AboutStats'
 import AboutCTA from './_components/AboutCTA'
 
 export const metadata: Metadata = {
-  title: '關於我們 | Echo Carnival HK - 專業嘉年華服務團隊',
-  description: '自2022年起，Echo Carnival HK 致力為香港學校、企業及各類活動提供一站式嘉年華服務。了解我們的故事、核心價值及為何成為客戶的首選夥伴。',
+  title: '關於ECHO HK Carnival｜香港專業嘉年華服務團隊',
+  description: 'ECHO HK Carnival自 2022 年起為香港學校、企業及商場提供一站式嘉年華服務。訂製30+ 款攤位遊戲、9 大服務範疇、100+ 場成功活動，全程專業駐場支援。',
   alternates: { canonical: 'https://echocarnival.hk/about' },
   openGraph: {
-    title: '關於我們 | Echo Carnival HK',
-    description: '自2022年起，Echo Carnival HK 致力為香港各類活動提供一站式嘉年華服務。了解我們的故事與核心價值。',
+    title: '關於ECHO HK Carnival｜香港專業嘉年華服務團隊',
+    description: 'ECHO HK Carnival自 2022 年起為香港學校、企業及商場提供一站式嘉年華服務。訂製30+ 款攤位遊戲、9 大服務範疇、100+ 場成功活動，全程專業駐場支援。',
     url: 'https://echocarnival.hk/about',
-    siteName: 'Echo Carnival HK',
+    siteName: 'ECHO HK Carnival',
     type: 'website',
   },
 }
@@ -24,12 +24,12 @@ const AboutPage = () => {
   const schemaData = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: '關於我們 | Echo Carnival HK',
-    description: '自2022年起，Echo Carnival HK 致力為香港各類活動提供一站式嘉年華服務。',
+    name: '關於ECHO HK Carnival｜香港專業嘉年華服務團隊',
+    description: 'ECHO HK Carnival自 2022 年起為香港學校、企業及商場提供一站式嘉年華服務。訂製30+ 款攤位遊戲、9 大服務範疇、100+ 場成功活動，全程專業駐場支援。',
     url: 'https://echocarnival.hk/about',
     mainEntity: {
       '@type': 'Organization',
-      name: 'Echo Carnival HK',
+      name: 'ECHO HK Carnival',
       foundingDate: '2022',
       url: 'https://echocarnival.hk',
       telephone: '+852 9391 0332',

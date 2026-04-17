@@ -6,23 +6,23 @@ import { localBusinessSchema } from '@/data/seo-schemas'
    Target Keywords: 欖球主題遊戲, 大型戶外活動器材租借
    ────────────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: '欖球主題 Fan Zone｜大型戶外活動器材租借 · HK Sevens 2026',
+  title: '公司團建活動遊戲香港｜Team Building 嘉年華方案 | ECHO HK Carnival',
   description:
-    '為 2026 香港國際七人欖球賽打造最強 Fan Zone！欖球主題攤位遊戲、大型戶外活動器材租借、夜光遊戲及 Phygital 互動體驗。啟德體育園場地策劃，立即查詢！',
+    '提升團隊合作的嘉年華活動方案，適合企業Team Building。即日獲取專屬報價及建議！',
   keywords:
-    '欖球主題遊戲, 大型戶外活動器材租借, HK Sevens 2026, Fan Zone, 啟德體育園, 攤位遊戲租借, 夜光遊戲, 香港',
+    '欖球主題遊戲, 大型戶外活動器材租借, HK Sevens 2026, Fan Zone, 啟德體育園, 攤位遊戲租借, 夜光遊戲, 香港, 公司Team Building, Annual Dinner, 公司Annual Dinner ',
   alternates: {
     canonical: 'https://echocarnival.hk/blog/sports-fan-zones',
   },
   openGraph: {
-    title: '欖球主題 Fan Zone｜大型戶外活動器材租借 · HK Sevens 2026',
+    title: '欖公司團建活動遊戲香港｜Team Building 嘉年華方案 | ECHO HK Carnival',
     description:
-      '2026 欖球七人賽 Fan Zone 策劃：欖球主題遊戲、大型戶外器材租借及夜光體驗。立即查詢！',
+      '提升團隊合作的嘉年華活動方案，適合企業Team Building。即日獲取專屬報價及建議！',
     url: 'https://echocarnival.hk/blog/sports-fan-zones',
-    siteName: 'Echo Carnival HK',
+    siteName: 'ECHO HK Carnival',
     type: 'article',
     publishedTime: '2026-03-27T00:00:00+08:00',
-    authors: ['Echo Carnival HK'],
+    authors: ['ECHO HK Carnival'],
   },
 }
 
@@ -30,19 +30,19 @@ const SportsFanZonesPage = () => {
   const pageSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: '欖球主題 Fan Zone｜大型戶外活動器材租借 · HK Sevens 2026',
+    headline: '欖公司團建活動遊戲香港｜Team Building 嘉年華方案 | ECHO HK Carnival',
     description:
-      '為 2026 香港國際七人欖球賽打造 Fan Zone，提供欖球主題遊戲及大型戶外活動器材租借。',
+      '提升團隊合作的嘉年華活動方案，適合企業Team Building。即日獲取專屬報價及建議！',
     url: 'https://echocarnival.hk/blog/sports-fan-zones',
     datePublished: '2026-03-27T00:00:00+08:00',
     author: {
       '@type': 'Organization',
-      name: 'Echo Carnival HK',
+      name: 'ECHO HK Carnival',
       url: 'https://echocarnival.hk',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Echo Carnival HK',
+      name: 'ECHO HK Carnival',
       logo: {
         '@type': 'ImageObject',
         url: 'https://echocarnival.hk/images/echo-carnival-logo.png',

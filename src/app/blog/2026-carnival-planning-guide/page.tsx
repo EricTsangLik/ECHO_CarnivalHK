@@ -5,26 +5,26 @@ import { geoFaqs, buildFaqSchema } from '@/data/faqs'
 
 export const metadata: Metadata = {
   title:
-    '2026 香港嘉年華活動策劃全攻略：從啟德體育園盛事到企業 ESG 團隊建設',
+    '學校嘉年華遊戲租借香港｜中學・小學活動專用方案 | ECHO HK Carnival',
   description:
-    '2026 年香港嘉年華活動策劃完整指南！涵蓋啟德體育園盛事、攤位遊戲租借、可持續活動策劃、夜光遊戲及 Phygital 互動趨勢。附活動籌備清單，立即收藏！',
+    '專為學校設計嘉年華活動方案，包括攤位遊戲及充氣設施。提供安全認證及專人支援，即日查詢報價！',
   keywords:
-    '攤位遊戲租借, 啟德體育園活動, 可持續活動策劃, 夜光遊戲租借, 2026 嘉年華, ESG 團隊建設, Phygital, 香港活動策劃',
+    '攤位遊戲租借, 啟德體育園活動, 可持續活動策劃, 夜光遊戲租借, 2026 嘉年華, ESG 團隊建設, Phygital, 香港活動策劃, 學校嘉年華, 中華文化日, 學校攤位遊戲, 學校開放日',
   alternates: {
     canonical:
       'https://echocarnival.hk/blog/2026-carnival-planning-guide',
   },
   openGraph: {
     title:
-      '2026 香港嘉年華活動策劃全攻略：從啟德體育園盛事到企業 ESG 團隊建設',
+      '學校嘉年華遊戲租借香港｜中學・小學活動專用方案 | ECHO HK Carnival',
     description:
-      '2026 年最全面的香港嘉年華策劃指南，涵蓋攤位遊戲租借、ESG 活動、Phygital 趨勢及活動籌備清單。',
+      '專為學校設計嘉年華活動方案，包括攤位遊戲及充氣設施。提供安全認證及專人支援，即日查詢報價！',
     url: 'https://echocarnival.hk/blog/2026-carnival-planning-guide',
-    siteName: 'Echo Carnival HK',
+    siteName: 'ECHO HK Carnival',
     type: 'article',
     publishedTime: '2026-03-27T00:00:00+08:00',
     modifiedTime: '2026-03-27T00:00:00+08:00',
-    authors: ['Echo Carnival HK'],
+    authors: ['ECHO HK Carnival'],
   },
 }
 
@@ -33,20 +33,20 @@ const PillarArticlePage = () => {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline:
-      '2026 香港嘉年華活動策劃全攻略：從啟德體育園盛事到企業 ESG 團隊建設',
+      '學校嘉年華遊戲租借香港｜中學・小學活動專用方案 | ECHO HK Carnival',
     description:
-      '2026 年香港嘉年華活動策劃完整指南，涵蓋攤位遊戲租借、啟德體育園盛事、可持續活動策劃及 Phygital 互動趨勢。',
+      '專為學校設計嘉年華活動方案，包括攤位遊戲及充氣設施。提供安全認證及專人支援，即日查詢報價！',
     image: 'https://echocarnival.hk/images/echo-carnival-logo.png',
     datePublished: '2026-03-27T00:00:00+08:00',
     dateModified: '2026-03-27T00:00:00+08:00',
     author: {
       '@type': 'Organization',
-      name: 'Echo Carnival HK',
+      name: 'ECHO HK Carnival',
       url: 'https://echocarnival.hk',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Echo Carnival HK',
+      name: 'ECHO HK Carnival',
       logo: {
         '@type': 'ImageObject',
         url: 'https://echocarnival.hk/images/echo-carnival-logo.png',

@@ -6,12 +6,12 @@ import ContactFAQ from './_components/ContactFAQ'
 import { contactFaqs, buildFaqSchema } from '@/data/faqs'
 
 export const metadata: Metadata = {
-  title: '聯絡我們 | Echo Carnival HK - 免費報價諮詢',
-  description: '歡迎聯絡 Echo Carnival HK 查詢嘉年華攤位遊戲租借、活動策劃及各類配套服務。WhatsApp、電話或電郵均可，我們會在1小時內回覆！',
+  title: '嘉年華報價查詢｜即日回覆 | ECHO HK Carnival',
+  description: '立即查詢嘉年華遊戲租借及活動服務報價！WhatsApp +852 93910332，最快 1 小時內回覆，免費提供活動建議。',
   alternates: { canonical: 'https://echocarnival.hk/contact' },
   openGraph: {
     title: '聯絡我們 | Echo Carnival HK',
-    description: '歡迎聯絡 Echo Carnival HK 查詢嘉年華攤位遊戲租借及各類配套服務。',
+    description: '歡迎聯絡 ECHO HK Carnival 查詢嘉年華攤位遊戲租借及各類配套服務。',
     url: 'https://echocarnival.hk/contact',
     siteName: 'Echo Carnival HK',
     type: 'website',
@@ -22,8 +22,8 @@ const ContactPage = () => {
   const schemaData = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: '聯絡我們 | Echo Carnival HK',
-    description: '歡迎聯絡 Echo Carnival HK 查詢嘉年華攤位遊戲租借及各類配套服務。',
+    name: '嘉年華報價查詢｜即日回覆 | ECHO HK Carnival',
+    description: '立即查詢嘉年華遊戲租借及活動服務報價！WhatsApp +852 93910332，最快 1 小時內回覆，免費提供活動建議。',
     url: 'https://echocarnival.hk/contact',
     mainEntity: {
       '@type': 'LocalBusiness',

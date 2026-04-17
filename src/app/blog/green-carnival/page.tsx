@@ -6,11 +6,11 @@ import { localBusinessSchema } from '@/data/seo-schemas'
    Target Keywords: 環保攤位, 無塑活動, ESG 慶祝活動
    ─────────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: '環保嘉年華｜無塑活動 · ESG 慶祝活動 · 綠色攤位',
+  title: '嘉年華遊戲租借價錢香港｜收費一覽＋套餐推薦 | ECHO HK Carnival',
   description:
-    '策劃符合 ESG 標準的環保嘉年華！環保攤位遊戲、無塑活動佈置、可回收獎品及低碳運輸。適合企業 ESG 慶祝活動、員工福利日及社區環保日。附 ESG 影響報告。',
+    '想知嘉年華遊戲租借幾錢？提供最新價格參考及套餐建議。 即日WhatsApp報價，透明收費！',
   keywords:
-    '環保攤位, 無塑活動, ESG 慶祝活動, 綠色嘉年華, 可持續活動策劃, 環保遊戲, ESG 團隊建設, 低碳活動, 香港',
+    '攤位遊戲租借價錢',
   alternates: {
     canonical: 'https://echocarnival.hk/blog/green-carnival',
   },
@@ -30,19 +30,19 @@ const GreenCarnivalPage = () => {
   const pageSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: '環保嘉年華｜無塑活動 · ESG 慶祝活動 · 綠色攤位',
+    headline: '嘉年華遊戲租借價錢香港｜收費一覽＋套餐推薦 | ECHO HK Carnival',
     description:
-      '策劃符合 ESG 標準的環保嘉年華，提供環保攤位、無塑活動佈置及 ESG 影響報告。',
+      '想知嘉年華遊戲租借幾錢？提供最新價格參考及套餐建議。 即日WhatsApp報價，透明收費！',
     url: 'https://echocarnival.hk/blog/green-carnival',
     datePublished: '2026-03-27T00:00:00+08:00',
     author: {
       '@type': 'Organization',
-      name: 'Echo Carnival HK',
+      name: 'ECHO HK Carnival',
       url: 'https://echocarnival.hk',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Echo Carnival HK',
+      name: 'ECHO HK Carnival',
       logo: {
         '@type': 'ImageObject',
         url: 'https://echocarnival.hk/images/echo-carnival-logo.png',
