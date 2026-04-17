@@ -2,14 +2,14 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '活動策劃攻略｜嘉年華趨勢及資訊',
+  title: '活動策劃攻略｜學校嘉年華、企業團建及收費指南',
   description:
-    '探索 Echo Carnival HK 的嘉年華活動策劃攻略、行業趨勢及實用貼士。涵蓋學校文化日、企業 ESG 活動、攤位遊戲租借指南及欖球 Fan Zone 方案等熱門主題。',
+    '探索 Echo Carnival HK 的嘉年華活動策劃攻略及實用貼士。涵蓋學校嘉年華、公司 Team Building 團建方案及最新遊戲租借價錢與套餐推薦。',
   alternates: { canonical: 'https://echocarnival.hk/blog' },
   openGraph: {
-    title: '活動策劃攻略｜Echo Carnival HK 嘉年華資訊',
+    title: '活動策劃攻略｜學校嘉年華、企業團建及收費指南',
     description:
-      '嘉年華活動策劃攻略、行業趨勢及實用貼士。涵蓋學校文化日、ESG 活動及攤位遊戲租借。',
+      '嘉年華活動策劃攻略及實用貼士。涵蓋學校嘉年華、企業團建及最新攤位遊戲租借收費指南。',
     url: 'https://echocarnival.hk/blog',
     siteName: 'Echo Carnival HK',
     type: 'website',
@@ -19,34 +19,33 @@ export const metadata: Metadata = {
 const articles = [
   {
     slug: '2026-carnival-planning-guide',
-    title:
-      '2026 香港嘉年華活動策劃全攻略：從啟德體育園盛事到企業 ESG 團隊建設',
+    title: '學校嘉年華遊戲租借香港｜中學・小學活動專用方案',
     excerpt:
-      '2026 年最全面的香港嘉年華策劃指南，涵蓋攤位遊戲租借、可持續活動策劃、夜光遊戲及 Phygital 互動趨勢。附活動籌備清單！',
+      '專為全港幼稚園、小學及中學度身訂造的攤位遊戲與充氣設施！適合學校開放日、陸運會及試後活動，提供機電署安全認證充氣設施及專人駐場支援。',
     date: '2026-03-27',
-    tags: ['活動策劃', '攤位遊戲租借', 'ESG', '啟德體育園'],
-    color: 'from-[#ff2151] to-[#ff6b35]',
-    emoji: '📋',
+    tags: ['學校嘉年華', '學校攤位遊戲', '嘉年華遊戲租借', '學校開放日'],
+    color: 'from-[#0f3460] to-[#4dbedf]',
+    emoji: '🏫',
   },
   {
     slug: 'sports-fan-zones',
-    title: '欖球主題 Fan Zone｜大型戶外活動器材租借 · HK Sevens 2026',
+    title: '公司團建活動遊戲香港｜Team Building 嘉年華方案',
     excerpt:
-      '為 2026 香港國際七人欖球賽 50 週年打造最強 Fan Zone！欖球主題攤位遊戲、大型戶外活動器材租借及夜光體驗。',
+      '提升團隊合作的嘉年華活動方案，適合企業Team Building。提供多款破冰遊戲及競技攤位，即日獲取專屬報價及建議！',
     date: '2026-03-27',
-    tags: ['欖球主題遊戲', 'Fan Zone', '大型戶外活動', '啟德體育園'],
-    color: 'from-[#1a1a2e] to-[#16213e]',
-    emoji: '🏉',
+    tags: ['公司團建活動', 'Team Building 香港', '團隊建立', '攤位遊戲租借'],
+    color: 'from-[#1a1a2e] to-[#ff2151]',
+    emoji: '🤝',
   },
   {
     slug: 'green-carnival',
-    title: '環保嘉年華｜無塑活動 · ESG 慶祝活動 · 綠色攤位',
+    title: '嘉年華遊戲租借價錢香港｜收費一覽＋套餐推薦',
     excerpt:
-      '策劃符合 ESG 標準的環保嘉年華！環保攤位遊戲、無塑活動佈置、可回收獎品及低碳運輸。附 ESG 影響報告。',
+      '想知嘉年華遊戲租借幾錢？為您提供最新價格參考及人氣套餐建議，即日WhatsApp報價，透明清晰無隱藏收費！',
     date: '2026-03-27',
-    tags: ['環保攤位', '無塑活動', 'ESG', '可持續活動'],
-    color: 'from-[#0d7c3a] to-[#28a745]',
-    emoji: '🌿',
+    tags: ['攤位遊戲租借價錢', '嘉年華遊戲租借香港', '攤位遊戲收費', '嘉年華套餐'],
+    color: 'from-[#ff2151] to-[#ffae21]',
+    emoji: '💰',
   },
 ]
 
@@ -56,7 +55,7 @@ const BlogPage = () => {
     '@type': 'Blog',
     name: '活動策劃攻略 | Echo Carnival HK',
     description:
-      '嘉年華活動策劃攻略、行業趨勢及實用貼士。',
+      '嘉年華活動策劃攻略、學校活動、企業團建方案及收費指南。',
     url: 'https://echocarnival.hk/blog',
     publisher: {
       '@type': 'Organization',
@@ -80,13 +79,13 @@ const BlogPage = () => {
       />
 
       {/* ── Hero ── */}
-      <section className="bg-gradient-to-br from-[#ff2151] to-[#ff6b35] text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-[#ff2151] to-[#ffae21] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
             活動策劃攻略
           </h1>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            嘉年華趨勢、策劃貼士及行業資訊——助您策劃 2026 年最精彩的活動
+            嘉年華遊戲租借、學校活動方案、企業團建貼士及最新收費指南——助您策劃最精彩的活動！
           </p>
         </div>
       </section>

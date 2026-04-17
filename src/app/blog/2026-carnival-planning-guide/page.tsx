@@ -3,22 +3,20 @@ import Link from 'next/link'
 import { localBusinessSchema } from '@/data/seo-schemas'
 import { geoFaqs, buildFaqSchema } from '@/data/faqs'
 
+/* ── 學校嘉年華遊戲租借香港｜中學・小學活動專用方案 ── */
 export const metadata: Metadata = {
-  title:
-    '學校嘉年華遊戲租借香港｜中學・小學活動專用方案 | ECHO HK Carnival',
+  title: '學校嘉年華遊戲租借香港｜中學・小學活動專用方案 | ECHO HK Carnival',
   description:
-    '專為學校設計嘉年華活動方案，包括攤位遊戲及充氣設施。提供安全認證及專人支援，即日查詢報價！',
+    '專為全港中學、小學及幼稚園設計的嘉年華遊戲租借方案。適合學校開放日、陸運會及試後活動，提供機電署安全認證充氣設施及專人駐場支援。',
   keywords:
-    '攤位遊戲租借, 啟德體育園活動, 可持續活動策劃, 夜光遊戲租借, 2026 嘉年華, ESG 團隊建設, Phygital, 香港活動策劃, 學校嘉年華, 中華文化日, 學校攤位遊戲, 學校開放日',
+    '學校嘉年華, 學校攤位遊戲, 嘉年華遊戲租借, 中學活動, 小學活動, 學校開放日, 試後活動, 充氣設施租借香港, 學校嘉年華策劃, 攤位遊戲',
   alternates: {
-    canonical:
-      'https://echocarnival.hk/blog/2026-carnival-planning-guide',
+    canonical: 'https://echocarnival.hk/blog/2026-carnival-planning-guide',
   },
   openGraph: {
-    title:
-      '學校嘉年華遊戲租借香港｜中學・小學活動專用方案 | ECHO HK Carnival',
+    title: '學校嘉年華遊戲租借香港｜中學・小學活動專用方案 | ECHO HK Carnival',
     description:
-      '專為學校設計嘉年華活動方案，包括攤位遊戲及充氣設施。提供安全認證及專人支援，即日查詢報價！',
+      '專為全港中學、小學及幼稚園設計的嘉年華遊戲租借方案。適合學校開放日、陸運會及試後活動，提供機電署安全認證充氣設施及專人駐場支援。',
     url: 'https://echocarnival.hk/blog/2026-carnival-planning-guide',
     siteName: 'ECHO HK Carnival',
     type: 'article',
@@ -28,14 +26,13 @@ export const metadata: Metadata = {
   },
 }
 
-const PillarArticlePage = () => {
+const SchoolCarnivalPage = () => {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline:
-      '學校嘉年華遊戲租借香港｜中學・小學活動專用方案 | ECHO HK Carnival',
+    headline: '學校嘉年華遊戲租借香港｜中學・小學活動專用方案 | ECHO HK Carnival',
     description:
-      '專為學校設計嘉年華活動方案，包括攤位遊戲及充氣設施。提供安全認證及專人支援，即日查詢報價！',
+      '專為全港中學、小學及幼稚園設計的嘉年華遊戲租借方案。適合學校開放日、陸運會及試後活動，提供機電署安全認證充氣設施及專人駐場支援。',
     image: 'https://echocarnival.hk/images/echo-carnival-logo.png',
     datePublished: '2026-03-27T00:00:00+08:00',
     dateModified: '2026-03-27T00:00:00+08:00',
@@ -54,16 +51,15 @@ const PillarArticlePage = () => {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id':
-        'https://echocarnival.hk/blog/2026-carnival-planning-guide',
+      '@id': 'https://echocarnival.hk/blog/2026-carnival-planning-guide',
     },
     keywords: [
-      '攤位遊戲租借',
-      '啟德體育園活動',
-      '可持續活動策劃',
-      '夜光遊戲租借',
-      'ESG 團隊建設',
-      'Phygital',
+      '學校嘉年華',
+      '學校攤位遊戲',
+      '嘉年華遊戲租借',
+      '中學活動',
+      '小學活動',
+      '學校開放日',
     ],
   }
 
@@ -89,7 +85,7 @@ const PillarArticlePage = () => {
       />
 
       {/* ── Hero ── */}
-      <section className="relative bg-gradient-to-br from-[#ff2151] to-[#ff6b35] text-white py-20 px-4">
+      <section className="relative bg-gradient-to-br from-[#0f3460] to-[#4dbedf] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link
             href="/blog"
@@ -98,14 +94,17 @@ const PillarArticlePage = () => {
             ← 返回攻略總覽
           </Link>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 mt-4">
-            2026 香港嘉年華活動策劃全攻略
+            學校嘉年華遊戲租借香港
             <br />
             <span className="text-xl md:text-3xl font-normal opacity-90">
-              從啟德體育園盛事到企業 ESG 團隊建設
+              中學・小學活動專用方案
             </span>
           </h1>
-          <p className="text-lg opacity-90">
-            發佈日期：2026 年 3 月 ｜ 閱讀時間：約 6 分鐘
+          <p className="text-lg opacity-90 max-w-2xl mx-auto">
+            專為全港幼稚園、小學及中學度身訂造的攤位遊戲與充氣設施！無論是學校開放日、陸運會還是試後活動，我們都能為師生帶來安全又難忘的嘉年華體驗。
+          </p>
+          <p className="text-sm opacity-60 mt-4">
+            發佈日期：2026 年 3 月 ｜ 閱讀時間：約 5 分鐘
           </p>
         </div>
       </section>
@@ -114,315 +113,183 @@ const PillarArticlePage = () => {
       <article className="max-w-4xl mx-auto px-4 py-16 text-gray-800 leading-relaxed">
         {/* ── 引言 ── */}
         <p className="text-lg mb-8">
-          2026 年，香港活動產業迎來前所未有的機遇。全新的<strong>啟德體育園</strong>落成啟用，適逢<strong>香港國際七人欖球賽 50 週年</strong>，加上政府大力推動文化及盛事經濟，各類嘉年華、文化日及企業活動需求急速攀升。無論您是學校行政人員、企業 HR、還是活動策劃師，這篇全攻略將為您提供從選址到執行的完整指引，助您在 2026 年策劃一場叫好又叫座的<strong>嘉年華活動</strong>。
+          籌辦校園活動時，老師及家教會（PTA）往往需要花費大量時間與精力設計攤位遊戲。Echo Carnival HK 提供一站式<strong>學校嘉年華遊戲租借</strong>服務，涵蓋經典攤位、大型充氣設施及益智遊戲，讓學校行政人員省卻繁瑣的準備工作。我們深知學校活動對安全性的嚴格要求，所有設施均具備相關安全認證，並提供專人駐場協助，確保活動順利進行。
         </p>
 
-        {/* ── H2: 啟德體育園 ── */}
-        <h2 className="text-2xl font-bold text-[#ff2151] mb-4 mt-12">
-          一、啟德體育園：2026 年盛事新地標
+        {/* ── H2: 適用場景 ── */}
+        <h2 className="text-2xl font-bold text-[#0f3460] mb-4 mt-12">
+          一、校園嘉年華的四大適用場景
+        </h2>
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
+            <div className="text-3xl mb-2">🏫</div>
+            <h3 className="text-lg font-bold text-[#0f3460] mb-2">學校開放日 (Open Day)</h3>
+            <p className="text-gray-600 text-sm">
+              開放日是展示學校活力的最佳時機。設置色彩繽紛的充氣城堡及合家歡攤位遊戲，能有效吸引區內家長及幼童駐足參與，提升學校形象。
+            </p>
+          </div>
+          <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
+            <div className="text-3xl mb-2">🏅</div>
+            <h3 className="text-lg font-bold text-[#0f3460] mb-2">陸運會及水運會</h3>
+            <p className="text-gray-600 text-sm">
+              在看台區後方或體育館旁設置競技類充氣設施（如充氣障礙賽）及運動主題攤位（如籃球神射手），讓未有參賽的學生也能感受濃厚的運動氣氛。
+            </p>
+          </div>
+          <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
+            <div className="text-3xl mb-2">🎉</div>
+            <h3 className="text-lg font-bold text-[#0f3460] mb-2">試後活動 / 結業派對</h3>
+            <p className="text-gray-600 text-sm">
+              考試過後，學生最需要放鬆身心！舉辦全校嘉年華，引進巨型充氣滑梯、水上充氣設施或夜光遊戲，為學年畫上完美句號。
+            </p>
+          </div>
+          <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
+            <div className="text-3xl mb-2">🧧</div>
+            <h3 className="text-lg font-bold text-[#0f3460] mb-2">中華文化日及節日慶典</h3>
+            <p className="text-gray-600 text-sm">
+              配合特定節日（如農曆新年、中秋節），我們提供投壺、踢毽子等傳統民間遊藝攤位，寓教於樂，讓學生在遊戲中體驗傳統文化。
+            </p>
+          </div>
+        </div>
+
+        {/* ── H2: 遊戲推薦 ── */}
+        <h2 className="text-2xl font-bold text-[#0f3460] mb-4 mt-12">
+          二、按年齡層嚴選：最受歡迎的校園遊戲
         </h2>
         <p className="mb-4">
-          啟德體育園作為香港最大型的綜合體育場館，主場館可容納 50,000 名觀眾，配備多用途草地及室外活動空間。2026 年欖球七人賽首次移師啟德，預計吸引超過 10 萬名海內外球迷，帶來龐大的<strong>啟德體育園活動</strong>商機。
+          不同年齡層的學生對遊戲的興趣和體能要求各異，我們為不同學校提供針對性的遊戲組合推薦：
         </p>
-        <p className="mb-4">
-          品牌及企業可善用場館周邊的 Fan Zone 區域，設置<strong>攤位遊戲租借</strong>體驗區。從經典的保齡狂潮、投壺遊戲到全新的<strong>夜光遊戲租借</strong>——LED 發光保齡球道、霓虹飛鏢靶——在夜間賽事氛圍下格外吸睛。配合現場大屏幕直播，打造「睇波 × 玩遊戲」的雙重體驗，是品牌曝光及客戶互動的絕佳機會。
-        </p>
-        <h3 className="text-xl font-semibold mb-3 mt-8">
-          1.1 Fan Zone 企劃要點
-        </h3>
-        <ul className="list-disc pl-6 mb-6 space-y-2">
-          <li>
-            <strong>場地申請：</strong>需向啟德體育園管理公司提交活動計劃書，建議提前 3-6 個月申請
-          </li>
-          <li>
-            <strong>電力規劃：</strong>Fan Zone 一般提供三相電源，需提前確認可用安培數
-          </li>
-          <li>
-            <strong>人流管理：</strong>預計高峰時段每小時 5,000+ 人流，攤位動線設計至關重要
-          </li>
-          <li>
-            <strong>欖球主題遊戲：</strong>建議加入橄欖球傳接挑戰、踢球入門遊戲等主題攤位
-          </li>
+        
+        <h3 className="text-xl font-semibold mb-3 mt-6 text-[#4dbedf]">幼稚園及初小 (K1 - P3)</h3>
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+          <li><strong>小型充氣城堡：</strong>高度及安全性專為幼童設計，防止碰撞。</li>
+          <li><strong>釣鴨樂 / 撈金魚：</strong>訓練幼童手眼協調能力，經典且極受歡迎。</li>
+          <li><strong>拋圈圈：</strong>規則簡單易懂，容易獲得成功感。</li>
+          <li><strong>魔術表演及扭氣球：</strong>由專業表演者駐場，為小朋友帶來驚喜。</li>
         </ul>
 
-        {/* ── H2: ESG 企業活動 ── */}
-        <h2 className="text-2xl font-bold text-[#ff2151] mb-4 mt-12">
-          二、ESG 團隊建設：企業嘉年華的新標準
-        </h2>
-        <p className="mb-4">
-          2026 年，ESG（環境、社會及管治）已不再是口號。港交所上市規則要求企業在年報中披露 ESG 表現，令越來越多跨國企業及上市公司在策劃員工活動時，主動尋求符合<strong>可持續活動策劃</strong>標準的方案。
-        </p>
-        <p className="mb-4">
-          Echo Carnival HK 的「綠色嘉年華」方案涵蓋三大範疇：
-        </p>
-        <div className="overflow-x-auto mb-6">
-          <table className="w-full border-collapse text-sm">
-            <thead>
-              <tr className="bg-[#ff2151] text-white">
-                <th className="border p-3 text-left">ESG 範疇</th>
-                <th className="border p-3 text-left">活動元素</th>
-                <th className="border p-3 text-left">KPI 指標</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="bg-gray-50">
-                <td className="border p-3 font-semibold">
-                  環境 (E)
-                </td>
-                <td className="border p-3">
-                  環保物料攤位、無塑裝飾、可回收獎品、低碳運輸
-                </td>
-                <td className="border p-3">
-                  碳排放量、回收率、塑膠減量百分比
-                </td>
-              </tr>
-              <tr>
-                <td className="border p-3 font-semibold">
-                  社會 (S)
-                </td>
-                <td className="border p-3">
-                  共融遊戲（輪椅友善）、社企合作餐飲、義工參與
-                </td>
-                <td className="border p-3">
-                  參與人數、共融比例、社企採購金額
-                </td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border p-3 font-semibold">
-                  管治 (G)
-                </td>
-                <td className="border p-3">
-                  活動後 ESG 報告、數據透明、供應商審核
-                </td>
-                <td className="border p-3">
-                  報告完整度、數據準確性
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p className="mb-4">
-          企業可在公司週年晚宴或員工福利日中融入綠色嘉年華元素，讓團隊建設活動同時成為 ESG 年報中的亮點案例。
-        </p>
+        <h3 className="text-xl font-semibold mb-3 mt-6 text-[#4dbedf]">高小及初中 (P4 - S3)</h3>
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+          <li><strong>巨型充氣障礙賽道：</strong>挑戰體能及速度，適合班際對抗賽。</li>
+          <li><strong>充氣飛鏢 / 競技神射手：</strong>結合運動元素，安全又刺激的射擊體驗。</li>
+          <li><strong>巨型疊疊樂 (Giant Jenga)：</strong>考驗邏輯思維與耐性。</li>
+          <li><strong>環保種子彈珠台：</strong>結合 STEM 與環保教育，寓教於樂。</li>
+        </ul>
 
-        {/* ── H2: 學校文化週 ── */}
-        <h2 className="text-2xl font-bold text-[#ff2151] mb-4 mt-12">
-          三、從「文化日」到「文化週」：學校活動升級趨勢
+        <h3 className="text-xl font-semibold mb-3 mt-6 text-[#4dbedf]">高中 (S4 - S6)</h3>
+        <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+          <li><strong>Speed Dash 衝刺跑道：</strong>配備電子計時器，測試爆發力，競技感滿分。</li>
+          <li><strong>LED 夜光保齡球：</strong>適合傍晚或室內禮堂舉行的試後派對，打卡一流。</li>
+          <li><strong>VR/AR 互動遊戲：</strong>結合最新科技，吸引青少年的眼球。</li>
+          <li><strong>客製化難度攤位：</strong>調高經典遊戲的難度，增加挑戰性。</li>
+        </ul>
+
+        {/* ── H2: 安全與認證 ── */}
+        <h2 className="text-2xl font-bold text-[#0f3460] mb-4 mt-12">
+          三、校園活動，安全第一
         </h2>
         <p className="mb-4">
-          教育界正經歷一場轉變——越來越多學校將單日的「中華文化日」擴展為整整一週的<strong>非物質文化遺產（ICH）體驗週</strong>。這種模式讓學生有更充裕的時間深度體驗傳統文化。
+          學校活動容不得半點安全隱患。Echo Carnival HK 將學生安全放在首位，我們的服務承諾包括：
         </p>
-        <h3 className="text-xl font-semibold mb-3 mt-8">
-          3.1 五天文化週建議時間表
-        </h3>
         <div className="overflow-x-auto mb-6">
           <table className="w-full border-collapse text-sm">
             <thead>
-              <tr className="bg-[#ff2151] text-white">
-                <th className="border p-3 text-left">日期</th>
-                <th className="border p-3 text-left">主題</th>
-                <th className="border p-3 text-left">活動內容</th>
+              <tr className="bg-[#0f3460] text-white">
+                <th className="border p-3 text-left">安全範疇</th>
+                <th className="border p-3 text-left">Echo Carnival HK 承諾</th>
               </tr>
             </thead>
             <tbody>
               <tr className="bg-gray-50">
-                <td className="border p-3">Day 1（週一）</td>
-                <td className="border p-3">書畫藝術</td>
-                <td className="border p-3">
-                  書法工作坊、水墨畫體驗、對聯攤位
-                </td>
+                <td className="border p-3 font-semibold">充氣設施認證</td>
+                <td className="border p-3">所有大型充氣設施均符合香港機電工程署 (EMSD) 的安全規格，並可提供相關證明文件供校方存檔。</td>
               </tr>
               <tr>
-                <td className="border p-3">Day 2（週二）</td>
-                <td className="border p-3">傳統手藝</td>
-                <td className="border p-3">
-                  剪紙、中國結編織、扇面繪畫工作坊
-                </td>
+                <td className="border p-3 font-semibold">電力與佈線</td>
+                <td className="border p-3">由合資格技工進行電力接駁，所有電線均會使用線槽板覆蓋或高空架設，防止學生絆倒。</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border p-3">Day 3（週三）</td>
-                <td className="border p-3">民間遊藝</td>
-                <td className="border p-3">
-                  投壺、踢毽子、陀螺及文化攤位遊戲
-                </td>
+                <td className="border p-3 font-semibold">專業駐場指導</td>
+                <td className="border p-3">按遊戲設施的危險程度，配備足夠數量的專業操作員及指導員駐場，全程監控使用情況。</td>
               </tr>
               <tr>
-                <td className="border p-3">Day 4（週四）</td>
-                <td className="border p-3">飲食文化</td>
-                <td className="border p-3">
-                  糖畫示範、湯圓製作、茶藝體驗
-                </td>
+                <td className="border p-3 font-semibold">保險保障</td>
+                <td className="border p-3">我們具備完善的第三者責任保險，保障活動期間的突發意外。</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border p-3">Day 5（週五）</td>
-                <td className="border p-3">嘉年華日</td>
-                <td className="border p-3">
-                  大型嘉年華、攤位遊戲、舞龍舞獅表演、頒獎禮
-                </td>
+                <td className="border p-3 font-semibold">衛生及清潔</td>
+                <td className="border p-3">所有遊戲道具及充氣設施在每次租借前後均會進行徹底清潔及消毒。</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        {/* ── H2: Phygital 趨勢 ── */}
-        <h2 className="text-2xl font-bold text-[#ff2151] mb-4 mt-12">
-          四、Phygital 遊戲趨勢：實體 × 數碼融合
+        {/* ── H2: 學校專屬優惠 ── */}
+        <h2 className="text-2xl font-bold text-[#0f3460] mb-4 mt-12">
+          四、學校及家教會 (PTA) 專屬方案
         </h2>
         <p className="mb-4">
-          「Phygital」（Physical + Digital）是 2026 年全球活動產業最火熱的關鍵詞。將實體攤位遊戲與數碼互動結合，大幅提升參加者投入度及社交媒體分享率。
+          我們明白學校的活動預算往往需要經過嚴格審批。因此，我們特別為香港的中小學及幼稚園提供<strong>學校專屬折扣優惠</strong>。
         </p>
-        <h3 className="text-xl font-semibold mb-3 mt-8">
-          4.1 熱門 Phygital 遊戲形式
-        </h3>
-        <ul className="list-disc pl-6 mb-6 space-y-2">
-          <li>
-            <strong>AR 攤位打卡：</strong>透過 AR 濾鏡在遊戲攤位前拍照，即時生成品牌主題動態貼紙，鼓勵社交平台分享
-          </li>
-          <li>
-            <strong>QR Code 積分系統：</strong>每完成一個攤位遊戲掃碼集點，儲夠點數可換取獎品，實現線上線下閉環
-          </li>
-          <li>
-            <strong>LED 夜光遊戲系列：</strong>發光保齡球道、霓虹飛鏢、UV 塗鴉牆——特別適合夜間活動及打卡位設計
-          </li>
-          <li>
-            <strong>電子排行榜：</strong>透過平板即時顯示各隊得分，增加競技氣氛，適合企業團隊建設
-          </li>
+        <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-700">
+          <li><strong>彈性套餐選擇：</strong>由 2 個攤位的小型體驗，到 10+ 個攤位連大型充氣設施的全校嘉年華，均可按預算度身訂造。</li>
+          <li><strong>一條龍服務：</strong>報價已包含運輸、安裝、拆卸及基本操作人員，清晰透明，沒有隱藏收費。</li>
+          <li><strong>採購程序配合：</strong>我們熟悉學校的採購及報價程序，能迅速提供正式報價單、商業登記證及相關資質文件以配合校方審批。</li>
         </ul>
-        <p className="mb-4">
-          <strong>夜光遊戲租借</strong>是今年最受商場及企業客戶歡迎的新品類。Echo Carnival HK 率先引入全套 LED 夜光遊戲系列，結合專業燈光佈置，為夜間活動打造沉浸式體驗。
-        </p>
-
-        {/* ── H2: 攤位遊戲租借 Pillar ── */}
-        <h2 className="text-2xl font-bold text-[#ff2151] mb-4 mt-12">
-          五、攤位遊戲租借：2026 年人氣遊戲推薦
-        </h2>
-        <p className="mb-4">
-          不論活動規模大小，選擇合適的<strong>攤位遊戲租借</strong>組合至關重要。以下是 2026 年最受歡迎的遊戲分類：
-        </p>
-        <ul className="list-disc pl-6 mb-6 space-y-2">
-          <li>
-            <strong>經典人氣：</strong>保齡狂潮、飛鏢挑戰、釣鴨樂、投壺
-          </li>
-          <li>
-            <strong>大型戶外：</strong>充氣城堡、大型滑梯、障礙賽道——適合大型戶外活動器材租借
-          </li>
-          <li>
-            <strong>夜光系列：</strong>LED 保齡、霓虹套圈、UV 塗鴉——最新夜光遊戲租借
-          </li>
-          <li>
-            <strong>文化主題：</strong>投壺、踢毽子、書法攤位——校園文化日首選
-          </li>
-          <li>
-            <strong>團隊競技：</strong>企業接力賽、團隊拼圖、計時挑戰——ESG 團隊建設熱選
-          </li>
-        </ul>
-
-        {/* ── H2: Planning Checklist ── */}
-        <h2 className="text-2xl font-bold text-[#ff2151] mb-4 mt-12">
-          六、2026 年活動籌備清單 ✅
-        </h2>
-        <p className="mb-4">
-          無論您籌備的是學校文化週、企業嘉年華還是大型 Fan Zone，以下清單確保萬無一失：
-        </p>
-        <div className="bg-gray-50 rounded-xl p-6 mb-8">
-          <h3 className="text-lg font-semibold mb-4">
-            📋 活動前 8-12 週
-          </h3>
-          <ul className="list-none space-y-2 mb-6">
-            <li>☐ 確定活動主題、日期及預算</li>
-            <li>☐ 選定場地並確認電力、空間需求</li>
-            <li>☐ 聯絡 Echo Carnival HK 索取免費報價</li>
-            <li>☐ 申請臨時娛樂牌照（如需要）</li>
-          </ul>
-          <h3 className="text-lg font-semibold mb-4">
-            📋 活動前 4-6 週
-          </h3>
-          <ul className="list-none space-y-2 mb-6">
-            <li>☐ 確認攤位遊戲及服務組合</li>
-            <li>☐ 安排場地實地視察（商場 / 學校 / 戶外）</li>
-            <li>☐ 確認保險及安全認證（EMSD / 第三者責任）</li>
-            <li>☐ 設計活動流程表及人流動線</li>
-          </ul>
-          <h3 className="text-lg font-semibold mb-4">
-            📋 活動前 1-2 週
-          </h3>
-          <ul className="list-none space-y-2 mb-6">
-            <li>☐ 確認最終人數及攤位配置</li>
-            <li>☐ 準備後備天氣方案（戶外活動）</li>
-            <li>☐ 確認獎品、佈置物料及餐飲安排</li>
-            <li>☐ 確認活動當日時間表及工作人員分工</li>
-          </ul>
-          <h3 className="text-lg font-semibold mb-4">
-            📋 活動當日
-          </h3>
-          <ul className="list-none space-y-2">
-            <li>☐ 提前 2 小時到場安裝及測試</li>
-            <li>☐ 進行安全檢查（充氣設施、電力）</li>
-            <li>☐ 開始活動！記得拍照打卡 📸</li>
-            <li>☐ 活動結束後有序拆卸及清場</li>
-          </ul>
-        </div>
 
         {/* ── CTA ── */}
-        <div className="bg-gradient-to-r from-[#ff2151] to-[#ff6b35] text-white rounded-2xl p-8 text-center my-12">
+        <div className="bg-gradient-to-r from-[#0f3460] to-[#4dbedf] text-white rounded-2xl p-8 text-center my-12 shadow-lg">
           <h2 className="text-2xl font-bold mb-4">
-            準備好策劃 2026 年最精彩的嘉年華了嗎？
+            🎓 為學生打造最難忘的校園嘉年華！
           </h2>
           <p className="mb-6 text-lg opacity-90">
-            Echo Carnival HK 提供免費場地評估及報價。WhatsApp
-            即時回覆，讓我們為您度身訂造完美活動方案！
+            立即聯絡我們，獲取學校專屬的嘉年華遊戲組合清單及報價。我們的顧問團隊將協助您規劃完美的活動流程！
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-block bg-white text-[#ff2151] font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition"
+              className="inline-block bg-white text-[#0f3460] font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition shadow-md hover:shadow-lg"
             >
-              免費報價查詢
+              索取學校報價單
             </Link>
             <a
-              href="https://wa.me/85293910332?text=我想查詢2026年嘉年華活動策劃"
+              href="https://wa.me/85293910332?text=我想查詢學校嘉年華活動及攤位遊戲租借"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-[#ff2151] transition"
+              className="inline-block border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-[#0f3460] transition shadow-md hover:shadow-lg"
             >
               WhatsApp 即時查詢
             </a>
           </div>
         </div>
 
-        {/* ── Internal Links (Hub-and-Spoke) ── */}
-        <div className="border-t pt-8 mt-8">
-          <h3 className="text-lg font-semibold mb-4">📎 延伸閱讀</h3>
-          <ul className="space-y-2 text-[#ff2151]">
+        {/* ── Internal Links ── */}
+        <div className="border-t border-gray-200 pt-8 mt-8">
+          <h3 className="text-lg font-semibold mb-4 text-gray-800">📎 延伸閱讀</h3>
+          <ul className="space-y-2 text-[#4dbedf]">
             <li>
-              <Link href="/booths" className="hover:underline">
-                → 瀏覽所有攤位遊戲租借選擇
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/blog/sports-fan-zones"
-                className="hover:underline"
-              >
-                → 欖球主題 Fan Zone｜HK Sevens 2026
+              <Link href="/booths" className="hover:underline flex items-center">
+                <span className="mr-2">→</span> 瀏覽所有攤位遊戲租借選擇
               </Link>
             </li>
             <li>
               <Link
                 href="/blog/green-carnival"
-                className="hover:underline"
+                className="hover:underline flex items-center"
               >
-                → 環保嘉年華 × ESG 慶祝活動
+                <span className="mr-2">→</span> 嘉年華遊戲租借價錢香港｜收費一覽＋套餐推薦
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:underline">
-                → 嘉年華一站式配套服務
+              <Link
+                href="/blog/sports-fan-zones"
+                className="hover:underline flex items-center"
+              >
+                <span className="mr-2">→</span> 公司團建活動遊戲香港｜Team Building 嘉年華方案
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:underline">
-                → 聯絡我們獲取免費報價
+              <Link href="/services" className="hover:underline flex items-center">
+                <span className="mr-2">→</span> 嘉年華一站式配套服務
               </Link>
             </li>
           </ul>
@@ -432,4 +299,4 @@ const PillarArticlePage = () => {
   )
 }
 
-export default PillarArticlePage
+export default SchoolCarnivalPage
