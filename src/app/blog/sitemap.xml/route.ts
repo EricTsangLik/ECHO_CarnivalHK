@@ -1,7 +1,7 @@
 import { keytomic } from '@/lib/keytomic'
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://echocarnival.hk'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://echocarnival.com.hk'
   
   // Add static /blog route
   let urls = [

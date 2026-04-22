@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://echocarnival.hk/sitemap.xml
+Sitemap: https://echocarnival.com.hk/sitemap.xml

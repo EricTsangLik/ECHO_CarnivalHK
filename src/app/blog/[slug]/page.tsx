@@ -19,12 +19,12 @@ export async function generateMetadata({
     title: blog.seo.metaTitle || `${blog.title} | Echo Carnival HK`,
     description: blog.seo.metaDescription || blog.excerpt || '',
     alternates: {
-      canonical: blog.seo.canonicalUrl || `https://echocarnival.hk/blog/${blog.slug}`,
+      canonical: blog.seo.canonicalUrl || `https://echocarnival.com.hk/blog/${blog.slug}`,
     },
     openGraph: {
       title: blog.seo.metaTitle || blog.title,
       description: blog.seo.metaDescription || blog.excerpt || '',
-      url: `https://echocarnival.hk/blog/${blog.slug}`,
+      url: `https://echocarnival.com.hk/blog/${blog.slug}`,
       siteName: 'Echo Carnival HK',
       type: 'article',
       publishedTime: blog.publishedAt,
@@ -51,25 +51,25 @@ export default async function BlogPostPage({
     '@type': 'Article',
     headline: blog.title,
     description: blog.excerpt,
-    image: blog.coverImageUrl || 'https://echocarnival.hk/images/echo-carnival-logo.png',
+    image: blog.coverImageUrl || 'https://echocarnival.com.hk/images/echo-carnival-logo.png',
     datePublished: blog.publishedAt,
     dateModified: blog.updatedAt,
     author: {
       '@type': 'Organization',
       name: 'Echo Carnival HK',
-      url: 'https://echocarnival.hk',
+      url: 'https://echocarnival.com.hk',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Echo Carnival HK',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://echocarnival.hk/images/echo-carnival-logo.png',
+        url: 'https://echocarnival.com.hk/images/echo-carnival-logo.png',
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://echocarnival.hk/blog/${blog.slug}`,
+      '@id': `https://echocarnival.com.hk/blog/${blog.slug}`,
     },
   }
 

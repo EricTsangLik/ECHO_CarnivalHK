@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     '香港專業嘉年華租借服務，提供 30+ 款室內外攤位遊戲、充氣設施、氣球佈置及一站式活動策劃。適合學校、商場及企業活動。 即日 WhatsApp 查詢 +852 93910332，最快 1 小時回覆！',
   keywords:
     '一站式嘉年華租借, 2026 活動策劃, 攤位遊戲租借, 嘉年華, 中華文化日, ESG 團隊建設, 商場活動, 學校慶典, 充氣設施, 香港, 嘉年華攤位遊戲租借 嘉年華服務香港 活動策劃香港',
-  alternates: { canonical: 'https://echocarnival.hk/' },
+  alternates: { canonical: 'https://echocarnival.com.hk/' },
   openGraph: {
     type: 'website',
-    url: 'https://echocarnival.hk/',
+    url: 'https://echocarnival.com.hk/',
     title: 'Echo Carnival HK｜一站式嘉年華租借 · 2026 活動策劃',
     description:
       '香港首選嘉年華攤位遊戲租借！涵蓋中華文化日、ESG 團隊建設、商場活動及學校慶典。2026 最新遊戲及充氣設施，立即免費報價！',

@@ -5,7 +5,7 @@ import { keytomic } from '@/lib/keytomic'
 export const metadata: Metadata = {
   title: '活動策劃攻略｜學校嘉年華、企業團建及收費指南',
   description: '探索 Echo Carnival HK 的嘉年華活動策劃攻略及實用貼士。涵蓋學校嘉年華、公司 Team Building 團建方案及最新遊戲租借價錢與套餐推薦。',
-  alternates: { canonical: 'https://echocarnival.hk/blog' },
+  alternates: { canonical: 'https://echocarnival.com.hk/blog' },
 }
 
 export default async function BlogPage({

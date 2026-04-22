@@ -10,7 +10,7 @@ import { Analytics } from '@vercel/analytics/react'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://echocarnival.hk'),
+  metadataBase: new URL('https://echocarnival.com.hk'),
   title: {
     default: 'Echo Carnival HK｜一站式嘉年華租借 · 2026 活動策劃',
     template: '%s | Echo Carnival HK',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://echocarnival.hk/',
+    url: 'https://echocarnival.com.hk/',
     title: 'Echo Carnival HK｜一站式嘉年華租借 · 2026 活動策劃',
     description:
       '香港首選嘉年華攤位遊戲租借！涵蓋中華文化日、ESG 團隊建設、商場活動及學校慶典。2026 最新遊戲及充氣設施，立即免費報價！',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     images: ['/images/echo-carnival-logo.png'],
   },
   alternates: {
-    canonical: 'https://echocarnival.hk/',
+    canonical: 'https://echocarnival.com.hk/',
   },
   other: {
     'theme-color': '#ff2151',

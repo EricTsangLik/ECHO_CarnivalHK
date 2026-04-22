@@ -13,14 +13,14 @@
 export const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'Organization'],
-  '@id': 'https://echocarnival.hk/#organization',
+  '@id': 'https://echocarnival.com.hk/#organization',
   name: 'Echo Carnival HK',
   alternateName: 'ECHO HK Carnival',
   description:
     '香港一站式嘉年華活動策劃及攤位遊戲租借服務商，專營學校文化日、企業 ESG 團隊建設、商場活動及各類慶典嘉年華。',
-  url: 'https://echocarnival.hk',
-  logo: 'https://echocarnival.hk/images/echo-carnival-logo.png',
-  image: 'https://echocarnival.hk/images/echo-carnival-logo.png',
+  url: 'https://echocarnival.com.hk',
+  logo: 'https://echocarnival.com.hk/images/echo-carnival-logo.png',
+  image: 'https://echocarnival.com.hk/images/echo-carnival-logo.png',
   telephone: '+852-9391-0332',
   email: 'echohkcarnival@gmail.com',
   foundingDate: '2022',
@@ -167,12 +167,12 @@ export const buildProductSchema = (input: ProductSchemaInput) => ({
   '@type': 'Product',
   name: input.name,
   description: input.description,
-  image: `https://echocarnival.hk${input.image}`,
-  url: `https://echocarnival.hk/booths/${input.slug}`,
+  image: `https://echocarnival.com.hk${input.image}`,
+  url: `https://echocarnival.com.hk/booths/${input.slug}`,
   brand: {
     '@type': 'Organization',
     name: 'Echo Carnival HK',
-    '@id': 'https://echocarnival.hk/#organization',
+    '@id': 'https://echocarnival.com.hk/#organization',
   },
   offers: {
     '@type': 'Offer',
@@ -180,7 +180,7 @@ export const buildProductSchema = (input: ProductSchemaInput) => ({
     price: input.price,
     priceValidUntil: '2026-12-31',
     availability: 'https://schema.org/InStock',
-    url: `https://echocarnival.hk/booths/${input.slug}`,
+    url: `https://echocarnival.com.hk/booths/${input.slug}`,
     seller: {
       '@type': 'Organization',
       name: 'Echo Carnival HK',
@@ -221,13 +221,13 @@ export const buildServiceSchema = (input: ServiceSchemaInput) => ({
   name: input.name,
   description: input.description,
   ...(input.image && {
-    image: `https://echocarnival.hk${input.image}`,
+    image: `https://echocarnival.com.hk${input.image}`,
   }),
-  url: `https://echocarnival.hk/services/${input.slug}`,
+  url: `https://echocarnival.com.hk/services/${input.slug}`,
   provider: {
     '@type': 'Organization',
     name: 'Echo Carnival HK',
-    '@id': 'https://echocarnival.hk/#organization',
+    '@id': 'https://echocarnival.com.hk/#organization',
   },
   areaServed: {
     '@type': 'Country',
@@ -242,7 +242,7 @@ export const buildServiceSchema = (input: ServiceSchemaInput) => ({
     },
   }),
   serviceType: '嘉年華活動服務',
-  termsOfService: 'https://echocarnival.hk/contact',
+  termsOfService: 'https://echocarnival.com.hk/contact',
 })
 
 /* ─────────────────────────────────────────────
@@ -251,13 +251,13 @@ export const buildServiceSchema = (input: ServiceSchemaInput) => ({
 export const webSiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  '@id': 'https://echocarnival.hk/#website',
+  '@id': 'https://echocarnival.com.hk/#website',
   name: 'Echo Carnival HK',
-  url: 'https://echocarnival.hk',
+  url: 'https://echocarnival.com.hk',
   description: '香港一站式嘉年華活動策劃及攤位遊戲租借服務',
   publisher: {
     '@type': 'Organization',
-    '@id': 'https://echocarnival.hk/#organization',
+    '@id': 'https://echocarnival.com.hk/#organization',
   },
   inLanguage: 'zh-HK',
 }
