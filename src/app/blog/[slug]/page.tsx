@@ -116,26 +116,7 @@ export default async function BlogPostPage({
         
         {/* Content Rendered */}
         <div 
-          className={`
-            prose prose-lg md:prose-xl max-w-none
-            prose-headings:font-bold prose-headings:text-[#0f3460] prose-headings:tracking-tight
-            prose-h2:text-3xl md:prose-h2:text-4xl prose-h2:mt-14 prose-h2:mb-6 prose-h2:border-b-2 prose-h2:border-gray-100 prose-h2:pb-4
-            prose-h3:text-2xl md:prose-h3:text-3xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-[#1a4b8c]
-            prose-p:text-gray-700 prose-p:leading-loose prose-p:mb-8
-            prose-a:text-[#4dbedf] prose-a:font-semibold hover:prose-a:text-[#0f3460] prose-a:transition-all prose-a:duration-300 prose-a:decoration-2 prose-a:underline-offset-4 hover:prose-a:underline-offset-8
-            prose-img:rounded-3xl prose-img:shadow-2xl hover:prose-img:shadow-3xl prose-img:transition-all prose-img:duration-500 hover:prose-img:-translate-y-2 prose-img:mx-auto prose-img:border prose-img:border-gray-100
-            prose-strong:text-[#0f3460] prose-strong:font-extrabold
-            prose-ul:list-disc prose-ul:pl-8 prose-ul:space-y-4 marker:text-[#4dbedf]
-            prose-ol:list-decimal prose-ol:pl-8 prose-ol:space-y-4 marker:text-[#0f3460] marker:font-bold
-            prose-li:text-gray-700 prose-li:leading-relaxed
-            prose-blockquote:border-l-4 prose-blockquote:border-[#4dbedf] prose-blockquote:bg-gradient-to-r prose-blockquote:from-[#4dbedf]/10 prose-blockquote:to-transparent prose-blockquote:py-4 prose-blockquote:pr-6 prose-blockquote:pl-8 prose-blockquote:italic prose-blockquote:text-gray-700 prose-blockquote:rounded-r-2xl prose-blockquote:shadow-sm prose-blockquote:my-10
-            prose-code:text-[#e01040] prose-code:bg-red-50 prose-code:px-2 prose-code:py-1 prose-code:rounded-lg prose-code:font-medium before:prose-code:content-none after:prose-code:content-none
-            prose-pre:bg-[#0f3460] prose-pre:text-gray-100 prose-pre:shadow-2xl prose-pre:rounded-2xl prose-pre:border prose-pre:border-[#0f3460]/20
-            prose-hr:border-gray-200 prose-hr:my-14 prose-hr:border-t-2
-            prose-table:overflow-hidden prose-table:rounded-2xl prose-table:shadow-lg prose-table:border prose-table:border-gray-200 prose-table:w-full
-            prose-th:bg-gray-50 prose-th:p-5 prose-th:text-[#0f3460] prose-th:font-bold prose-th:text-left
-            prose-td:p-5 prose-td:border-t prose-td:border-gray-200 prose-td:text-gray-700
-          `}
+          className="blog-content"
           dangerouslySetInnerHTML={{ __html: blog.html }}
         />
 
