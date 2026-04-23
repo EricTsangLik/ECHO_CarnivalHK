@@ -2,9 +2,11 @@ import {
   getHealth,
   listBlogs,
   getBlogById,
+  getBlogBySlug,
   type GetHealthResult,
   type ListBlogsResult,
   type GetBlogByIdResult,
+  type GetBlogBySlugResult,
 } from '@keytomic/sdk'
 
 const getHeaders = () => ({
@@ -33,41 +35,21 @@ export const keytomic = {
     })
   },
   getBlogBySlug: async (slug: string) => {
-    let blogId: string | null = null
-    let cursor: string | undefined = undefined
-    let hasMore = true
-
     try {
-      while (hasMore && !blogId) {
-        const listRes = await listBlogs({
-          query: { limit: 50, cursor },
-          headers: getHeaders(),
-        })
-
-        const page = listRes.data
-        const found = page.data.find((b) => b.slug === slug)
-        if (found) {
-          blogId = found.id
-          break
-        }
-
-        hasMore = page.pageInfo.hasMore
-        cursor = page.pageInfo.nextCursor || undefined
-      }
-
-      if (!blogId) return null
-
-      const detailRes = await getBlogById({
-        path: { id: blogId },
+      const detailRes = await getBlogBySlug({
+        query: { slug },
         headers: getHeaders(),
       })
 
       return detailRes.data.data
-    } catch (err) {
-      console.error(err)
-      return null
+    } catch (err: any) {
+      if (err?.response?.status === 404) {
+        return null
+      }
+      throw err
     }
   },
 }
 
-export type { GetHealthResult, ListBlogsResult, GetBlogByIdResult }
+export type { GetHealthResult, ListBlogsResult, GetBlogByIdResult, GetBlogBySlugResult }
+

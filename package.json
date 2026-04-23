@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@keytomic/sdk": "^0.4.2",
+    "@keytomic/sdk": "^0.4.4",
     "@vercel/analytics": "^1",
     "clsx": "^2",
     "framer-motion": "^12.25.0",

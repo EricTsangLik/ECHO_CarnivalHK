@@ -3,6 +3,8 @@ import { keytomic } from '@/lib/keytomic'
 import { Metadata } from 'next'
 import Link from 'next/link'
 
+export const dynamic = 'force-dynamic'
+
 export async function generateMetadata({
   params,
 }: {
@@ -114,7 +116,7 @@ export default async function BlogPostPage({
         
         {/* Content Rendered */}
         <div 
-          className="prose prose-lg max-w-none prose-headings:text-[#0f3460] prose-a:text-[#4dbedf] hover:prose-a:text-[#0f3460] prose-img:rounded-xl prose-img:shadow-md"
+          className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-[#0f3460] prose-h2:text-3xl prose-h2:mt-10 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-[#4dbedf] hover:prose-a:text-[#0f3460] prose-a:transition-colors prose-a:underline prose-img:rounded-2xl prose-img:shadow-lg prose-img:mx-auto prose-strong:text-[#0f3460] prose-ul:list-disc prose-ul:pl-6 prose-ol:list-decimal prose-ol:pl-6 prose-li:my-2 prose-blockquote:border-l-4 prose-blockquote:border-[#4dbedf] prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-600"
           dangerouslySetInnerHTML={{ __html: blog.html }}
         />
 
