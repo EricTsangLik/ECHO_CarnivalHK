@@ -8,11 +8,11 @@ import AboutStats from './_components/AboutStats'
 import AboutCTA from './_components/AboutCTA'
 
 export const metadata: Metadata = {
-  title: '關於ECHO HK Carnival｜香港專業嘉年華服務團隊',
+  title: '關於我們',
   description: 'ECHO HK Carnival自 2022 年起為香港學校、企業及商場提供一站式嘉年華服務。訂製30+ 款攤位遊戲、9 大服務範疇、100+ 場成功活動，全程專業駐場支援。',
   alternates: { canonical: 'https://echocarnival.com.hk/about' },
   openGraph: {
-    title: '關於ECHO HK Carnival｜香港專業嘉年華服務團隊',
+    title: 'ECHO HK Carnival | 關於我們',
     description: 'ECHO HK Carnival自 2022 年起為香港學校、企業及商場提供一站式嘉年華服務。訂製30+ 款攤位遊戲、9 大服務範疇、100+ 場成功活動，全程專業駐場支援。',
     url: 'https://echocarnival.com.hk/about',
     siteName: 'ECHO HK Carnival',

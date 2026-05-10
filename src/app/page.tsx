@@ -9,7 +9,7 @@ import { localBusinessSchema, webSiteSchema } from '@/data/seo-schemas'
 
 /* ── Task A: Home Page Meta Suite ── */
 export const metadata: Metadata = {
-  title: '嘉年華攤位遊戲租借香港｜學校・商場・企業活動首選【即時報價】| ECHO HK Carnival',
+  title: 'ECHO HK Carnival | 嘉年華攤位遊戲租借香港｜學校・商場・企業活動首選【即時報價】',
   description:
     '香港專業嘉年華租借服務，提供 30+ 款室內外攤位遊戲、充氣設施、氣球佈置及一站式活動策劃。適合學校、商場及企業活動。 即日 WhatsApp 查詢 +852 93910332，最快 1 小時回覆！',
   keywords:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://echocarnival.com.hk/',
-    title: 'Echo Carnival HK｜一站式嘉年華租借 · 2026 活動策劃',
+    title: 'ECHO HK Carnival | 一站式嘉年華租借 · 2026 活動策劃',
     description:
       '香港首選嘉年華攤位遊戲租借！涵蓋中華文化日、ESG 團隊建設、商場活動及學校慶典。2026 最新遊戲及充氣設施，立即免費報價！',
     siteName: 'Echo Carnival HK',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Echo Carnival HK｜一站式嘉年華租借 · 2026 活動策劃',
+    title: 'ECHO HK Carnival | 一站式嘉年華租借 · 2026 活動策劃',
     description:
       '香港首選嘉年華攤位遊戲租借！涵蓋中華文化日、ESG 團隊建設、商場活動及學校慶典。2026 最新遊戲，立即免費報價！',
     images: ['/images/echo-carnival-logo.png'],

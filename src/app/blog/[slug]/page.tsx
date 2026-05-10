@@ -14,17 +14,17 @@ export async function generateMetadata({
   const blog = await keytomic.getBlogBySlug(slug)
   
   if (!blog) {
-    return { title: 'Blog Not Found | Echo Carnival HK' }
+    return { title: 'Blog Not Found' }
   }
   
   return {
-    title: blog.seo.metaTitle || `${blog.title} | Echo Carnival HK`,
+    title: blog.seo.metaTitle || blog.title,
     description: blog.seo.metaDescription || blog.excerpt || '',
     alternates: {
       canonical: blog.seo.canonicalUrl || `https://echocarnival.com.hk/blog/${blog.slug}`,
     },
     openGraph: {
-      title: blog.seo.metaTitle || blog.title,
+      title: blog.seo.metaTitle || `ECHO HK Carnival | ${blog.title}`,
       description: blog.seo.metaDescription || blog.excerpt || '',
       url: `https://echocarnival.com.hk/blog/${blog.slug}`,
       siteName: 'Echo Carnival HK',
