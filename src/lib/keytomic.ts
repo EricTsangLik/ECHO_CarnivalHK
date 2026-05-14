@@ -9,9 +9,14 @@ import {
   type GetBlogBySlugResult,
 } from '@keytomic/sdk'
 
-const getHeaders = () => ({
-  Authorization: `Bearer ${process.env.KEYTOMIC_API_KEY}`,
-})
+const getHeaders = () => {
+  if (!process.env.KEYTOMIC_API_KEY) {
+    throw new Error('KEYTOMIC_API_KEY is not defined')
+  }
+  return {
+    Authorization: `Bearer ${process.env.KEYTOMIC_API_KEY}`,
+  }
+}
 
 export const keytomic = {
   getHealth: (): Promise<GetHealthResult> => {
@@ -49,6 +54,29 @@ export const keytomic = {
       throw err
     }
   },
+}
+
+export async function getAllKeytomicBlogsForSitemap() {
+  let allBlogs: any[] = []
+  let cursor: string | undefined = undefined
+  let hasMore = true
+
+  while (hasMore) {
+    const result = await keytomic.listBlogs(50, cursor)
+    const blogs = result.data.data
+    const pageInfo = result.data.pageInfo
+    
+    allBlogs = [...allBlogs, ...blogs]
+    hasMore = pageInfo.hasMore
+    cursor = pageInfo.nextCursor || undefined
+  }
+
+  return allBlogs.map((blog) => ({
+    slug: blog.slug,
+    updatedAt: blog.updatedAt,
+    publishedAt: blog.publishedAt,
+    createdAt: blog.createdAt,
+  }))
 }
 
 export type { GetHealthResult, ListBlogsResult, GetBlogByIdResult, GetBlogBySlugResult }
