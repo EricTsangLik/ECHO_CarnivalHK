@@ -9,16 +9,16 @@ const ServicePageHero = () => {
       <div className="service-page-hero-content">
         <motion.span
           className="service-page-badge"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           🎪 一站式嘉年華服務
         </motion.span>
 
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.15, duration: 0.7 }}
         >
           全方位<span className="highlight-text">嘉年華配套<span className="swoosh" /></span>服務
@@ -34,8 +34,8 @@ const ServicePageHero = () => {
 
         <motion.div
           className="service-hero-highlights"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.5 }}
         >
           <div className="hero-highlight-item">

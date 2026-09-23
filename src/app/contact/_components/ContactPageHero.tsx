@@ -9,16 +9,16 @@ const ContactPageHero = () => {
       <div className="contact-page-hero-content">
         <motion.span
           className="contact-page-badge"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           📞 聯絡我們
         </motion.span>
 
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.15, duration: 0.7 }}
         >
           讓我們一起<span className="highlight-text">創造歡樂<span className="swoosh" /></span>
@@ -34,8 +34,8 @@ const ContactPageHero = () => {
 
         <motion.div
           className="contact-hero-highlights"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.5 }}
         >
           <div className="hero-highlight-item">

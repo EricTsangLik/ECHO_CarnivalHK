@@ -51,15 +51,14 @@ const BoothShowcase = () => {
           </div>
         </div>
 
-        <motion.div layout className="gallery-grid showcase-grid">
+        <motion.div className="gallery-grid showcase-grid">
           <AnimatePresence mode="wait">
             {displayedBooths.map((booth, index) => (
               <motion.div
                 key={booth.id}
-                layout
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 transition={{ duration: 0.35, delay: index * 0.05 }}
                 className="booth-card showcase-card"
                 onClick={() => setSelectedBooth(booth)}
@@ -104,10 +103,10 @@ const BoothShowcase = () => {
           >
             <motion.div
               className="modal-content"
-              initial={{ scale: 0.8, opacity: 0, y: 50 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.8, opacity: 0, y: 50 }}
-              transition={{ type: 'spring', duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
             >
               <button className="modal-close-btn" onClick={() => setSelectedBooth(null)}>×</button>

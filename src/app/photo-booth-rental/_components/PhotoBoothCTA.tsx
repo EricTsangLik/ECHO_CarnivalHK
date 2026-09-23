@@ -1,8 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { photoBoothWhatsApp } from '@/data/navigation'
 
-const ServiceCTA = () => {
+const PhotoBoothCTA = () => {
   return (
     <section className="section booth-cta-section">
       <div className="container">
@@ -11,38 +12,32 @@ const ServiceCTA = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
         >
           <div className="service-cta-inner">
-            <span className="service-cta-badge">🎪 免費諮詢</span>
-            <h2>讓我們為您打造難忘的嘉年華體驗</h2>
-            <p>告訴我們您的活動構想，我們會提供最合適的方案及報價。</p>
+            <span className="service-cta-badge">Photo Booth 查詢</span>
+            <h2>想做一個客人會主動排隊、影完又會分享的活動打卡位？</h2>
+            <p>告訴我活動日期、地點、人數和主題，我幫你建議最合適的 Photo Booth 方案。</p>
             <div className="booth-cta-buttons">
               <a
-                href="https://wa.me/85293910332?text=I'm%20inquiring%20about%20carnival%20services"
+                href={photoBoothWhatsApp}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="booth-cta-primary"
               >
-                💬 WhatsApp 免費諮詢
-              </a>
-              <a href="mailto:echohkcarnival@gmail.com" className="booth-cta-secondary">
-                ✉️ echohkcarnival@gmail.com
+                WhatsApp 查詢 Photo Booth
               </a>
             </div>
             <div className="service-cta-trust">
               <div className="trust-item">✅ 免費報價</div>
-              <div className="trust-item">✅ 度身訂造</div>
+              <div className="trust-item">✅ 自訂相框</div>
               <div className="trust-item">✅ 1小時內回覆</div>
             </div>
           </div>
-
-          <div className="booth-cta-blob booth-cta-blob-1" />
-          <div className="booth-cta-blob booth-cta-blob-2" />
         </motion.div>
       </div>
     </section>
   )
 }
 
-export default ServiceCTA
+export default PhotoBoothCTA

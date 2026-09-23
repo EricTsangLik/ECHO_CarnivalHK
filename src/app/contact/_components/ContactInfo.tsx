@@ -58,8 +58,8 @@ const ContactInfo = () => {
               target={method.href.startsWith('http') ? '_blank' : undefined}
               rel={method.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               className="contact-method-card"
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
             >
@@ -79,8 +79,8 @@ const ContactInfo = () => {
         {/* Business Hours */}
         <motion.div
           className="contact-hours-card"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >

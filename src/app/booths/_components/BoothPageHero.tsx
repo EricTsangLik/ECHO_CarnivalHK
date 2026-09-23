@@ -12,16 +12,16 @@ const BoothPageHero = () => {
       <div className="booth-page-hero-content">
         <motion.span
           className="booth-page-badge"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           🎮 遊戲攤位租借
         </motion.span>
 
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.15, duration: 0.7 }}
         >
           精選嘉年華<span className="highlight-text">遊戲攤位<span className="swoosh" /></span>
@@ -37,8 +37,8 @@ const BoothPageHero = () => {
 
         <motion.div
           className="booth-page-stats"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.5 }}
         >
           <div className="stat-item">

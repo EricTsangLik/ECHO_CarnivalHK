@@ -79,6 +79,9 @@ export const localBusinessSchema = {
     '商場活動',
     '充氣設施',
     '學校週年慶典',
+    'Photo Booth 租用',
+    '韓式人生四格',
+    'AI Photo Booth',
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -127,6 +130,13 @@ export const localBusinessSchema = {
             itemOffered: {
               '@type': 'Service',
               name: '活動策劃',
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Photo Booth 租用',
             },
           },
         ],

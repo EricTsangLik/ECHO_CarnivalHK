@@ -157,6 +157,8 @@ export const clientLogos: ClientLogo[] = [
   { id: 'c6', name: 'Sun Life 永明金融', image: '/images/client-logo/logo-sunlife.jpg' },
   { id: 'c7', name: 'DFS 環球免稅店', image: '/images/client-logo/logo-dfs.png' },
   { id: 'c8', name: 'PopWalk 天晉匯', image: '/images/client-logo/logo-tkopopwalk.png' },
+  { id: 'c9', name: '保險業監管局 Insurance Authority', image: '/images/client-logo/logo-HKIA.png' },
+  { id: 'c10', name: 'Deloitte 德勤', image: '/images/client-logo/logo-deloitte.png' },
 ];
 
 export const mainLogo = '/images/echo-carnival-logo.png';

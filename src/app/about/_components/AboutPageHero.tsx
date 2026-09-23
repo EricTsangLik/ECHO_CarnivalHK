@@ -9,16 +9,16 @@ const AboutPageHero = () => {
       <div className="about-page-hero-content">
         <motion.span
           className="about-page-badge"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           ✨ 自2022年起打造難忘嘉年華
         </motion.span>
 
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.15, duration: 0.7 }}
         >
           用<span className="highlight-text">熱情<span className="swoosh" /></span>與<span className="highlight-text">專業<span className="swoosh" /></span>創造歡樂

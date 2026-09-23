@@ -1,25 +1,27 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 const servicesFull = [
   {
-    id: 1,
-    icon: '🏰',
-    title: '嘉年華充氣互動設施',
-    shortDesc: '大型充氣彈床、滑梯及互動競技設施，為活動增添動感與歡笑。',
+    id: 5,
+    slug: 'snacks',
+    icon: '🍿',
+    title: '爆谷機／棉花糖機／小食攤位',
+    shortDesc: '爆谷站、棉花糖機及各式小食攤位，為活動增加即場美食體驗。',
     details: [
-      '大型充氣城堡及彈床',
-      '充氣滑梯及攀爬牆',
-      '充氣障礙賽道',
-      '充氣相撲對戰服',
-      '專業安全墊及圍欄',
+      '爆谷機租借',
+      '棉花糖機租借',
+      '雪糕機租借',
+      '各式小食攤位',
     ],
-    suitable: '學校運動日、大型嘉年華、親子日營',
-    color: '#ff6b6b',
+    suitable: '社區嘉年華、節日派對、週年慶典',
+    color: '#ff922b',
   },
   {
     id: 2,
+    slug: 'balloons',
     icon: '🎈',
     title: '特色氣球佈置',
     shortDesc: '特色氣球佈置，為活動增添歡樂氣氛。',
@@ -34,24 +36,26 @@ const servicesFull = [
     color: '#ffd93d',
   },
   {
-    id: 3,
-    icon: '🤹',
-    title: '互動娛樂',
-    shortDesc: '專業小丑表演、近景魔術互動及現場扭氣球，帶動全場氣氛。',
+    id: 1,
+    slug: 'inflatables',
+    icon: '🏰',
+    title: '充氣彈床及互動設施',
+    shortDesc: '大型充氣彈床、滑梯及互動競技設施，為活動增添動感與歡笑。',
     details: [
-      '專業小丑表演',
-      '近景魔術互動',
-      '現場扭氣球',
-      '小丑雜耍表演',
-      '互動遊戲主持',
+      '大型充氣城堡及彈床',
+      '充氣滑梯及攀爬牆',
+      '充氣障礙賽道',
+      '充氣相撲對戰服',
+      '專業安全墊及圍欄',
     ],
-    suitable: '商場推廣、聖誕活動、兒童生日會',
-    color: '#6bcb77',
+    suitable: '學校運動日、大型嘉年華、親子日營',
+    color: '#ff6b6b',
   },
   {
     id: 4,
+    slug: 'workshops',
     icon: '🎨',
-    title: '手工藝工作坊',
+    title: 'DIY 手作工作坊',
     shortDesc: '各類創意DIY工作坊，適合親子同樂，製作獨一無二的紀念品。',
     details: [
       '皮革工藝製作',
@@ -64,25 +68,27 @@ const servicesFull = [
     color: '#4d96ff',
   },
   {
-    id: 5,
-    icon: '🍿',
-    title: '體驗活動',
-    shortDesc: '即影即有拍照區、爆谷站、棉花糖機及各式小食攤位。',
+    id: 3,
+    slug: 'entertainment',
+    icon: '🤹',
+    title: '魔術、小丑、扭氣球及表演',
+    shortDesc: '專業小丑表演、近景魔術互動及現場扭氣球，帶動全場氣氛。',
     details: [
-      '即影即有拍照區',
-      '爆谷機租借',
-      '棉花糖機租借',
-      '雪糕機租借',
-      '各式小食攤位',
+      '專業小丑表演',
+      '近景魔術互動',
+      '現場扭氣球',
+      '小丑雜耍表演',
+      '互動遊戲主持',
     ],
-    suitable: '社區嘉年華、節日派對、週年慶典',
-    color: '#ff922b',
+    suitable: '商場推廣、聖誕活動、兒童生日會',
+    color: '#6bcb77',
   },
   {
     id: 6,
+    slug: 'stage',
     icon: '🎤',
-    title: '舞台表演',
-    shortDesc: '現場樂隊唱歌、舞蹈表演及專業DJ打碟，打造視聽盛宴。',
+    title: '舞台、音響及燈光',
+    shortDesc: '現場樂隊唱歌、舞蹈表演及專業音響燈光，打造視聽盛宴。',
     details: [
       '現場樂隊表演',
       '歌手駐唱',
@@ -95,8 +101,9 @@ const servicesFull = [
   },
   {
     id: 7,
+    slug: 'prizes',
     icon: '🧸',
-    title: '毛絨公仔訂購',
+    title: '獎品公仔訂購',
     shortDesc: '提供各類嘉年華獎品公仔批發及訂購服務。',
     details: [
       '各尺寸毛絨公仔',
@@ -110,6 +117,7 @@ const servicesFull = [
   },
   {
     id: 8,
+    slug: 'permits',
     icon: '📝',
     title: '活動牌照及保險',
     shortDesc: '代辦各類臨時娛樂牌照及活動第三者責任保險申請。',
@@ -125,8 +133,9 @@ const servicesFull = [
   },
   {
     id: 9,
+    slug: 'planning',
     icon: '✨',
-    title: '活動策劃及設計',
+    title: '活動策劃、場地佈置及平面設計',
     shortDesc: '一站式活動策劃、場地佈置及平面設計服務。',
     details: [
       '活動主題策劃',
@@ -153,11 +162,12 @@ const ServiceShowcase = () => {
           {servicesFull.map((svc, index) => (
             <motion.div
               key={svc.id}
+              id={svc.slug}
               className="svc-showcase-card"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.08, duration: 0.5 }}
+              transition={{ delay: index * 0.08, duration: 0.45 }}
             >
               <div className="svc-showcase-header" style={{ borderLeftColor: svc.color }}>
                 <span className="svc-showcase-icon">{svc.icon}</span>
@@ -175,6 +185,13 @@ const ServiceShowcase = () => {
                   ))}
                 </ul>
 
+                {svc.slug === 'snacks' && (
+                  <p className="svc-showcase-short" style={{ marginTop: '1rem' }}>
+                    Photo Booth／人生四格租用請見{' '}
+                    <Link href="/photo-booth-rental">AI Photo Booth 租用</Link>
+                  </p>
+                )}
+
                 <div className="svc-suitable">
                   <span className="svc-suitable-label">適合：</span>
                   <span>{svc.suitable}</span>
@@ -182,7 +199,7 @@ const ServiceShowcase = () => {
               </div>
 
               <a
-                href="https://wa.me/85293910332?text=I'm%20inquiring%20about%20the%20game%20booth"
+                href="https://wa.me/85293910332?text=I'm%20inquiring%20about%20carnival%20services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="svc-showcase-btn"

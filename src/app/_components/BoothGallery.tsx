@@ -54,15 +54,14 @@ const BoothGallery = () => {
           </div>
         </div>
 
-        <motion.div layout className="gallery-grid">
+        <motion.div className="gallery-grid">
           <AnimatePresence mode='wait'>
             {displayedBooths.map((booth) => (
               <motion.div
                 key={booth.id}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
                 className="booth-card"
                 onClick={() => handleBoothClick(booth)}
@@ -103,10 +102,10 @@ const BoothGallery = () => {
           >
             <motion.div 
               className="modal-content"
-              initial={{ scale: 0.8, opacity: 0, y: 50 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.8, opacity: 0, y: 50 }}
-              transition={{ type: "spring", duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
             >
               <button className="modal-close-btn" onClick={closeModal}>×</button>

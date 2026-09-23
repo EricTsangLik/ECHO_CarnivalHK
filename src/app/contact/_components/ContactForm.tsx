@@ -16,11 +16,12 @@ const eventTypeOptions = [
 
 const serviceOptions = [
   '攤位遊戲租借',
+  'AI Photo Booth 租用',
   '充氣互動設施',
   '氣球佈置',
   '互動娛樂（小丑/魔術）',
   '手工藝工作坊',
-  '體驗活動（拍照/小食）',
+  '爆谷機／棉花糖機／小食攤位',
   '舞台表演',
   '獎品公仔訂購',
   '活動牌照及保險',
@@ -85,8 +86,8 @@ const ContactForm = () => {
         <motion.form
           className="contact-form"
           onSubmit={handleSubmit}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >

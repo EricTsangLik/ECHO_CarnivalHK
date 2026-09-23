@@ -27,8 +27,8 @@ const EventTypes = () => {
             <motion.div
               key={index}
               className="event-type-card"
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.06, duration: 0.4 }}
             >

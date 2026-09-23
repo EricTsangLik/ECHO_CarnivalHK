@@ -24,8 +24,8 @@ const ContactFAQ = () => {
             <motion.div
               key={index}
               className={`faq-item ${openIndex === index ? 'faq-open' : ''}`}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.06, duration: 0.4 }}
             >
@@ -53,8 +53,8 @@ const ContactFAQ = () => {
         {/* Final CTA */}
         <motion.div
           className="contact-final-cta"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >

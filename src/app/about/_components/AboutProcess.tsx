@@ -39,8 +39,8 @@ const AboutProcess = () => {
             <motion.div
               key={step.number}
               className="about-process-item"
-              initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15, duration: 0.5 }}
             >

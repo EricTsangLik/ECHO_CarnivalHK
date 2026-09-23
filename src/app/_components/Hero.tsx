@@ -7,8 +7,8 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-content">
         <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
           className="hero-badge"
         >
@@ -16,16 +16,16 @@ const Hero = () => {
         </motion.div>
         
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
           為您的活動 <span className="highlight-text">帶來<span className="swoosh"></span></span> 嘉年華樂趣
         </motion.h1>
 
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
           攤位遊戲租借｜嘉年華服務
@@ -41,8 +41,8 @@ const Hero = () => {
         
         <motion.div
           className="hero-buttons"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
           <a href="#booths" className="btn btn-primary">探索遊戲 →</a>
