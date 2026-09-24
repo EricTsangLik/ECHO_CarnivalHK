@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
+const koreanPhotoBoothImage = '/images/Booth/Korean Photo Booth/korean_photo_booth.jpg'
 const aiPhotoBoothImage = '/images/Booth/AI photo Booth/AI_photo_booth.jpeg'
 
 const photoBoothServices = [
@@ -13,6 +14,8 @@ const photoBoothServices = [
     shortDesc:
       '經典韓式四格相片體驗，簡約、好玩、易分享。客人可自由擺 pose，即場打印專屬相片，最適合校園活動、商場推廣、品牌快閃店及企業活動。',
     color: '#ff6b6b',
+    image: koreanPhotoBoothImage,
+    imageAlt: '韓式人生四格相片條，印有生日主題相框',
   },
   {
     id: 'ai',
